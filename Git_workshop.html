@@ -3,53 +3,121 @@
   <head>
     <title>Practical Steps Towards Reproducibility</title>
     <meta charset="utf-8" />
-    <meta name="author" content="Dr Patricia Menéndez" />
+    <meta name="author" content="Patricia Menéndez" />
     <script src="libs/header-attrs-2.14/header-attrs.js"></script>
-    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link href="libs/remark-css-0.0.1/ninjutsu.css" rel="stylesheet" />
+    <!--
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> 
+    -->
+    <link rel="icon" href="images/favicon.ico"  type='image/x-icon'/>    
+    <link rel="stylesheet" href="assets/animate.css" type="text/css" />
+    <link rel="stylesheet" href="assets/monash-logo.css" type="text/css" />
+    <link rel="stylesheet" href="assets/monash-brand.css" type="text/css" />
+    <link rel="stylesheet" href="assets/monash-fonts.css" type="text/css" />
+    <link rel="stylesheet" href="assets/styles.css" type="text/css" />
+    <link rel="stylesheet" href="assets/custom.css" type="text/css" />
   </head>
   <body>
     <textarea id="source">
-class: center, middle, inverse, title-slide
 
-# Practical Steps Towards Reproducibility
-### Dr Patricia Menéndez
-### Department of Econometrics and Business Statistics <a
-href="mailto:patricia.menendez@monash.edu"
-class="email">patricia.menendez@monash.edu</a> <span
-class="citation">@PM_maths</span>
+
+
+
+background-image: url(photos/colton-sturgeon-6KkYYqTEDwQ-unsplash.jpg)
+background-size: cover
+
+count: false
+
+.column.shade_black[.content[
+
+&lt;br&gt;
+
+# .monash-white.outline-text[Practical Steps Towards Reproducibility]
+
+&lt;h2 class="monash-white outline-text" style="font-size: 30pt!important;"&gt;&lt;/h2&gt;
+
+&lt;br&gt;
+
+&lt;h2 style="font-weight:900!important;"&gt;&lt;/h2&gt;
+
+.bottom_abs.width100[
+
+Lecturer: *Patricia Menéndez*
+
+Department of Econometrics and Business Statistics &lt;br&gt;
+Monash University, Melbourne
+
+
+
+
+&lt;br&gt;
+]
+
+
+]]
+
+
+
+
+
+
+
 
 ---
-
 # You are working on a project and it is going great!
 
-&lt;img src="photos/markus-spiske-kK7uPfb2YWU-unsplash.jpg" width="90%" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+&lt;img src="https://media.giphy.com/media/26tOZ42Mg6pbTUPHW/giphy.gif" width="80%" style="display: block; margin: auto;" /&gt;
 
 ---
 # You return to the same project few months later
+&lt;br&gt; &lt;br&gt;
+&lt;img src="photos/martijn-baudoin-4h0HqC3K4-c-unsplash.jpg" width="50%" style="display: block; margin: auto;" /&gt;
 
-&lt;img src="photos/matthew-guay-oJ-xS4Zes1Y-unsplash.jpg" width="70%" style="display: block; margin: auto;" /&gt;
 
+.small[Photo by &lt;a href="https://unsplash.com/@maguay?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"&gt;Matthew Guay&lt;/a&gt; on &lt;a href="https://unsplash.com/s/photos/messy-cable?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"&gt;Unsplash&lt;/a&gt;]
 
+---
+class:  transition, center
+# Critical issue
+&lt;br&gt;&lt;br&gt;
+![](https://media.giphy.com/media/11fDMHAzihB8D6/giphy.gif)
+.small[https://media.giphy.com/media/11fDMHAzihB8D6/giphy.gif]
 
-Photo by &lt;a href="https://unsplash.com/@maguay?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"&gt;Matthew Guay&lt;/a&gt; on &lt;a href="https://unsplash.com/s/photos/messy-cable?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"&gt;Unsplash&lt;/a&gt;
-  
   
 ---
 # Let's unpack: What could possible go wrong??!!
-
+&lt;br&gt;
 .pull-left[
-&lt;img src="photos/matthew-guay-oJ-xS4Zes1Y-unsplash.jpg" width="70%" style="display: block; margin: auto;" /&gt;
+
+&lt;img src="photos/versions.png" width="50%" style="display: block; margin: auto;" /&gt;
+
 ]
 
+--
 .pull-right[
-&lt;img src="photos/matthew-guay-oJ-xS4Zes1Y-unsplash.jpg" width="70%" style="display: block; margin: auto;" /&gt;
+Which data file was the last one?
+&lt;img src="photos/documents.png" width="40%" style="display: block; margin: auto;" /&gt;
+
 ]
 
+--
+&lt;br&gt;
 .pull-left[
-&lt;img src="photos/matthew-guay-oJ-xS4Zes1Y-unsplash.jpg" width="70%" style="display: block; margin: auto;" /&gt;
+
+Got a new computer?
+
+&lt;img src="figs/helloquence-5fNmWej4tAA-unsplash.jpg" width="60%" style="display: block; margin: auto;" /&gt;
+.small[Photo by &lt;a href="https://unsplash.com/@homajob?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"&gt;Scott Graham&lt;/a&gt; on &lt;a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"&gt;Unsplash&lt;/a&gt;
+  ]
 ]
+
+--
+&lt;br&gt;
 .pull-right[
-&lt;img src="photos/matthew-guay-oJ-xS4Zes1Y-unsplash.jpg" width="70%" style="display: block; margin: auto;" /&gt;
+Copy paste in the wrong place?
+
+&lt;img src="https://media.giphy.com/media/l0HlQXlQ3nHyLMvte/giphy.gif" width="60%" style="display: block; margin: auto;" /&gt;
 ]
 
 
@@ -57,42 +125,54 @@ Photo by &lt;a href="https://unsplash.com/@maguay?utm_source=unsplash&amp;utm_me
 ---
 # Live our lives peacefully
 
-&lt;img src="css/colton-sturgeon-6KkYYqTEDwQ-unsplash.jpg" width="90%" style="display: block; margin: auto;" /&gt;
-
+&lt;img src="photos/colton-sturgeon-6KkYYqTEDwQ-unsplash.jpg" width="80%" style="display: block; margin: auto;" /&gt;
+.small[Photo by &lt;a href="https://unsplash.com/@coltonsturgeon?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"&gt;Colton Sturgeon&lt;/a&gt; on &lt;a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"&gt;Unsplash&lt;/a&gt;
+  ]
 ---
 class: left, top
 # Reproducible research and replicability
 
+&lt;br&gt;&lt;br&gt;
 **Definitions by the USA National Academies of Science, Engineering and Medicine**:
 
-- .green[Reproducibility] ("computational reproducibility") means obtaining consistent computational results using the same input data, computational steps, methods, code, and conditions of analysis. 
+&lt;br&gt;
+- .green[**Reproducibility**] ("computational reproducibility") means obtaining consistent computational results using the same input data, computational steps, methods, code, and conditions of analysis. 
 
-- .green[Replicability] means obtaining consistent results across studies aimed at answering the same scientific question, each of which has obtained its own data
+- .green[**Replicability**] means obtaining consistent results across studies aimed at answering the same scientific question, each of which has obtained its own data.
 
-
+&lt;br&gt;
   
-[Reference here: Report on reproducibility and replicability](https://www.nap.edu/read/25303/chapter/1#xix)
+[Report on reproducibility and replicability](https://www.nap.edu/read/25303/chapter/1#xix)
 
 
 
 ---
 class: left, top
-# In other words: Reproducibility 
+# ~~Figure it out~~
 
+&lt;br&gt;&lt;br&gt;
 .pull-left[
-&lt;img src="photos/xavi-cabrera-kn-UmDZQDjM-unsplash.jpg" width="90%" style="display: block; margin: auto;" /&gt;
+&lt;img src="figs/ryan-quintal-US9Tc9pKNBU-unsplash.jpg" width="50%" style="display: block; margin: auto;" /&gt;
 
-Photo by &lt;a href="https://unsplash.com/@xavi_cabrera?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"&gt;Xavi Cabrera&lt;/a&gt; on &lt;a href="https://unsplash.com/s/photos/lego?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"&gt;Unsplash&lt;/a&gt;
+&lt;img src="figs/karla-hernandez-LrlyZzX6Sws-unsplash.jpg" width="50%" style="display: block; margin: auto;" /&gt;
+
   
 ]
 
-
+&lt;br&gt;&lt;br&gt;
 .pull-right[
 
-- Pieces (data)
-- Instructions/manual (analysis)
-- Tools (build environment)
+- **Pieces** 
+- **Instructions/manual** 
+- **Tools** 
 
+&lt;br&gt;&lt;br&gt;
+
+
+.small[Photo by &lt;a href="https://unsplash.com/@xavi_cabrera?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"&gt;Xavi Cabrera&lt;/a&gt; on &lt;a href="https://unsplash.com/s/photos/lego?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"&gt;Unsplash&lt;/a&gt;]
+
+.small[Photo by &lt;a href="https://unsplash.com/@karlahrnndz?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"&gt;Karla Hernandez&lt;/a&gt; on &lt;a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"&gt;Unsplash&lt;/a&gt;
+  ]
 ]
 
 &lt;!-- --- --&gt;
@@ -123,237 +203,201 @@ class:  left, top
 
 # Philosophy 
 
-To make our projects reproducible we need to think at the beginning of any project about ("computational") reproducibility.
+&lt;br&gt;&lt;br&gt;
 
+Reproducibility is a way of thinking and approach projects:
 
-* Working to make our projects/research reproducible does require extra upfront effort.
+&lt;br&gt;
 
+.pull-right[
+&lt;img src="photos/diego-ph-fIq0tET6llw-unsplash.jpg" width="50%" style="display: block; margin: auto;" /&gt;
+
+&lt;br&gt;
+
+.small[Photo by &lt;a href="https://unsplash.com/@jdiegoph?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"&gt;Diego PH&lt;/a&gt; on &lt;a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"&gt;Unsplash&lt;/a&gt;
+  ]
+]
+
+.pull-left[
+.content-box-neutral[
 * Requires planning.
 
-* Demands to be organized.
+* Needs extra upfront effort.
 
-* Need to think more broadly.
+
+* Demands us to be organized.
+
+* Entitles to think more broadly.
+]
+]
 
 
 ---
 
 class:  left, top
 
-# Reproducibility complexity 
+# Reproducibility complexity
+
+&lt;br&gt;&lt;br&gt;
 
 
-
-Complexity varies if the project requires a single tool and involves only one person as when we deal with team complex projects requiring many different tools.
-
-
----
-class:  left, top
-# Accesible connected  workflow
-
-&lt;img src="photos/tamas-tuzes-katai-KJA1xo42dr4-unsplash.jpg" width="50%" style="display: block; margin: auto;" /&gt;
-
----
-class:  transition
-# Practical tips
-
-- Plan the type and scale of the project
-- Think carefully about how the pieces can be connected
-- From day one: documentation data provenance and licensing/ scripts/ tools ...
-- Think about your future self and other users
-- Work maintenance (team)
-- External services / dependencies
-
-
----
-class:  transition
-# Some Practical Steps 
-
-
----
-class:  transition
-# Many different types of projects
-
-- Projects vary in complexity and tools used.
-
-- Projects can have single contributors or many contributors.
-
-- Sometimes our role is only on one small piece of the puzzle.
-
-.pull-left[
-- While some other times we are in charge of putting it all together. 
-]
-.pull-right[
-&lt;img src="photos/jonny-gios-SqjhKY9877M-unsplash.jpg" width="50%" style="display: block; margin: auto;" /&gt;
-]
-
-
----
-class:  transition
-# Project organization 
-
-
-Think before you start how you are going to organize your project and prepare the scafolding for that.
-
-- For example folder where all the contents of the project will be stored.
-- In particular, where is the data going to be stored and how?
-- Scripts and codes
-- How are other things going to be stored or refer to?
-- How different contents are liked together?
-- Overall documentation?
-- All the elements that another person will need to be able to re-create or reproduce the project.
-
----
-class:  transition
-# Project organization: Examples
-
-&lt;img src="photos/project1.png" width="80%" style="display: block; margin: auto;" /&gt;
-
-
-
-
----
-class:  transition
-# Project organization: Examples II
-
----
-class:  transition
-# Project organization: Examples
-
-&lt;img src="photos/project.png" width="80%" style="display: block; margin: auto;" /&gt;
-
-
----
-class:  transition
-# Documentation
-
-- Scripts and code documentation
-- Make usage of README files
-- In more complex projects a writing a journal might be required
-- Connect entries to the journal to files or other info 
-
-
-
----
-class:  transition
-# Data handling 
-
-- Record the provenance and licensing of the data.
-- Use raw data (as much as possible).
-- Integrate all the data preparation and data wrangling in the project:
-     * Scripts of different programming languages
-     * Using other software such as excel/SAS/SQL etc. If this is the case, all the steps must be documented so all can be reproduced.
-
-
-
----
-class:  left, top
-# You will need a toolbox
-
-Using tools for reproducible research and reporting
-
-&lt;img src="figs/how.jpg" width="70%" style="display: block; margin: auto;" /&gt;
-.tiny[&lt;span&gt;Photo by &lt;a href="https://unsplash.com/@toddquackenbush?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText"&gt;Todd Quackenbush&lt;/a&gt; on &lt;a href="https://unsplash.com/s/photos/tools?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText"&gt;Unsplash&lt;/a&gt;&lt;/span&gt;]
-
-
-
-
-
----
-class:  left, middle
-# Dynamic documents
-
-.content-box-green[
-* Include code use for data analysis + 
-                       report text =
-                       Report/Paper
-]
-All in a .green[sequential] and .green[dynamic way]!
-
-
----
-# Project Files: Order versus mess
-.pull-left[
-
-&lt;img src="figs/omid-kashmari-s34f0Wxbens-unsplash.jpg" width="80%" /&gt;
-
-
-]
+Complexity varies:
 
 .pull-right[
-
-&lt;img src="figs/sharon-mccutcheon-tn57JI3CewI-unsplash.jpg" width="80%" /&gt;
-
-
+&lt;img src="photos/hiclipart.png" width="30%" style="display: block; margin: auto;" /&gt;
 ]
 
-
-
-
-
----
-class: center, top
-
-# Computer paths
-
-&lt;img src="figs/nathan-anderson-uq5JjGK_4SE-unsplash.jpg" width="80%" /&gt;
-
-Where are files and folders store in our computer?
-
----
-class: left, top
-# Computer Paths
-
-* A _path_ is the complete location or name of where a computer 
-file, directory, device, or web page is located.
-
-## Examples
-
-  - .bolder[Windows] `\(\rightarrow\)` .purple[C:\documents\ETC5513]
-  - .bolder[Mac/linux] `\(\rightarrow\)` .purple[/Users/documents/ETC5513]
-  - .bolder[Internet path] `\(\rightarrow\)` .purple[http://www.google.com]
- 
-
-
-
----
-class: left, top
-# Absolute and Relative Paths
-
-* .bold[Absolute or full path]
-An absolute or full path begins with a drive letter followed by a colon, such as D: or /users.
-  - Windows: C:\documents\charlie
-  - Mac/linux: /Users/documents/courses/ETC5513
-
-* .bold[Relative path]
-A relative path refers to a location that is .green[relative to a current directory] (or folder):
-  - ETC5513/exercise.Rmd
-(no matter where the folder sits things can actually run)
-.content-box-soft[ 
-It is essential to understand where your directories (folder) and files are within your computer. 
-Having clarity about that and the projects file architecture
-gives you total control about its organization
-]
-
-
-
----
-class: middle, middle
-# What is a version control system?
+&lt;br&gt;
 
 .content-box-soft[
-"Version control is a system that records changes to a file or set of files over time so that you can recall specific versions later."]
+-  Some projects require a single tool (R or Phython for example) and involves only one person.
+]
 
-.green[It also allow us to collaborate and share our projects with others!]
+.content-box-soft[
+-  Other projects might involve different teams and require many different tools.
+]
 
-[Book on Git here - fantastic resource](https://git-scm.com/book/en/v2).
 
-&lt;img src="figs/hat.png" width="30%" style="display: block; margin: auto 0 auto auto;" /&gt;
+
+
+---
+# Project example
+&lt;br&gt;
+
+&lt;img src="figs/environmental-data-science-r4ds-general.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+
+
+---
+class: center, middle
+# Example: R, Rstudio and Rmarkdown files
+
+&lt;br&gt;
+.pull-left[
+&lt;img src="figs/first-rmarkdown-code.png" width="90%" /&gt;
+]
+
+&lt;br&gt;
+.pull-right[
+&lt;img src="figs/first-rmarkdown-output.png" width="90%" /&gt;
+]
+
+
+---
+# Literate programming
+
+&lt;br&gt;&lt;br&gt;
+.content-box-neutral[
+Literate programming is an approach to writing reports using software that weaves together the source code and text at the time of creation. 
+]
+
+&lt;br&gt;
+
+.blue[Donald Knuth coined the term
+literate programming in the 1970s to refer to a source file
+that could be both run by a computer and “woven” with a
+formatted presentation document [Knuth, 1992].]
+
+
+---
+# Complex workflow example
+
+&lt;img src="photos/ereefs.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+
+.pull-left[
+&lt;img src="photos/ereefs1.png" width="150%" style="display: block; margin: auto;" /&gt;
+]
+.pull-right[
+&lt;img src="photos/ereefs2.png" width="70%" style="display: block; margin: auto;" /&gt;
+]
+
+&lt;br&gt;
+.small[https://www.ereefs.org.au/about/]
+---
+# Complex projects need more than literate programming
+
+&lt;img src="photos/umberto-FewHpO4VC9Y-unsplash.jpg" width="80%" style="display: block; margin: auto;" /&gt;
+.small[Photo by &lt;a href="https://unsplash.com/@umby?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"&gt;Umberto&lt;/a&gt; on &lt;a href="https://unsplash.com/@umby?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"&gt;Unsplash&lt;/a&gt;
+  ]
+
+&lt;br&gt;&lt;br&gt;
+Literate programming
+
+
+---
+class: transition
+
+&lt;br&gt;&lt;br&gt;
+
+#Reproducibility set up will depend on the project
+
+&lt;br&gt;&lt;br&gt;
+General practical tips for reproducible workflows
+
+&lt;br&gt;
+.orange[There is no one-size-fits-all approach!]
+
+
+
+---
+class: transition
+# Tip 1: Plan in adavance
+
+&lt;br&gt;
+
+- Plan the type and scale of the project for reproducibility (as much as possible!).
+- Brainstorm about how  different components are to be connected in a reproducible way. Update when necessary.
+- .purple[.bold[Think about your "future self" and others.]]
+- Set up a version control system.
+- Plan for literate programming and scripting as much as possible.
+- Keep revising and updating the plans as you go.
+
+---
+# Workflow organization 
+
+
+Decide how you are going to organize your project's workflow and prepare the scaffolding for that.
+
+&lt;br&gt;
+
+- For example, think about the project folder's structure
+- In particular, where is the data going to be stored and how?
+- Where will you place the scripts and codes? 
+- How are other things going to be stored in the project?
+- How are the different elements going to be linked together?
+- Where will you place the project documentation?
+
+&lt;br&gt;
+.content-box-soft[
+ .blue[Think about someone else that have no clue about this project and will need to run it in 3 years time!] 
+]
+
+
+---
+class:  middle, top
+
+# What is a version control system?
+
+&lt;img src="figs/marco-lermer-bHZ2_D4bTfg-unsplash.jpg" width="40%" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+
+.content-box-soft[.bold[.green[Version control is a system that records changes to a file or set of files over time
+so that you can recall specific versions later.]]]
+
+&lt;br&gt;
+.green[It also allows us to collaborate and share our projects with others!]
+
+
+.small[&lt;span&gt;Photo by &lt;a href="https://unsplash.com/@malepics?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText"&gt;Marco Lermer&lt;/a&gt; on &lt;a href="https://unsplash.com/?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText"&gt;Unsplash&lt;/a&gt;&lt;/span&gt;]
+
 
 
 ---
 class: left, middle
 # Version control
 
+&lt;br&gt;
 - .content-box-soft[Version control systems are a category of software tools that 
 help store and manage changes to source code (projects) over time.]
 - .content-box-soft[Version control software keeps track of every modification
@@ -367,1085 +411,429 @@ collaborating and for sharing open source resources.]
 
 
 
+
+
 ---
-class: left, middle
-# Different Version control Systems
+class:  left, top
 
-.bold[.green[Distributed version control systems]]
-
+# Git
+&lt;br&gt;
 .pull-left[
-&lt;img src="figs/distributed.png" width="70%" /&gt;
-
-[Figure source &amp; more info](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control)
-]
-.pull-right[
-- These systems --&gt; .green[fully mirror the repository], including its full history in .green[various servers/locations]
-- If any server malfunction, and these systems were collaborating via that server, any of the client 
-repositories can be copied back up to the server to restore it. 
-- Every clone is really a full backup of all the data.
-]
-
-
-
-
----
-# Distributed Version Control: Git
-.bold[.green[We are going to use a distributed version control called Git]]
-
 &lt;img src="figs/Git-Logo-Black.png" width="70%" /&gt;
-
-
-
----
-class: left, middle
-# Git for us 
-.content-box-soft[ 
-      - A system for controlling our project versions
-      - A disaster recovery system
-      - A synchronization service
-      - A platform for disseminating our work
-      - A tool for collaboration
-      - ...
 ]
-[More on Git here](https://git-scm.com/book/en/v2)
 
-
----
-class: left, middle
-# Git overview in a nutshell
-Let's think of the connections between the different versions of an R project as a tree (Git tree).
-.pull-left[
-- Git tree example.
-- White circles represent each version of the project.
-- We have what we call .green[master/main] (default branch).
-- We have branches that appeared and then .green[merged]
-with the master branch.
-
-
-]
 .pull-right[
-&lt;img src="figs/git_tree1.jpg" width="100%" /&gt;
+&lt;img src="figs/git_tree2.jpg" width="70%" /&gt;
+&lt;br&gt;
 ]
+
+
+&lt;br&gt;&lt;br&gt;
+
+
+"Git is a distributed version-control system for tracking changes in source 
+code during software development. It is designed for coordinating work among 
+programmers, but it can be used to track changes in any set of files. Its 
+goals include speed, data integrity,  and support for distributed, non-linear workflows"
+
+.small[https://en.wikipedia.org/wiki/Git]
+
+---
+class:  left, top
+#Github, Bitbucket and others
+
+&lt;br&gt;
+.pull-left[
+&lt;img src="figs/atlassian_Bitbucket_Logo.png" width="80%" /&gt;
+]
+
+.pull-right[
+&lt;img src="figs/GitHub_Logo.png" width="70%" /&gt;
+]
+
+&lt;br&gt;
+
+* Both are cloud-based hosting service that lets you manage Git repositories.
+
+* .green[GitHub/Bitbucket] are code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
 
 
 ---
-class: left, middle
-# We need to learn
-.content-box-neutral[
-- How Git operates --&gt; shell/command line
-- How to connect our R projects to a Git repo
-- How to connect our local Git repo to a Git Cloud repository (GitHub).
+class:  center, top
+# Git and Github
+
+&lt;br&gt;
+&lt;img src="figs/Gitvs.Github-1a.jpg" width="60%" /&gt;
+
+.small[Source: https://blog.devmountain.com/git-vs-github-whats-the-difference/]
+
+---
+# Sharing: team work / open source
+&lt;br&gt;
+&lt;img src="figs/sharing.jpg" width="90%" style="display: block; margin: auto;" /&gt;
+
+
+
+
+---
+class: transition
+# Tip 2: File system for the project
+&lt;br&gt;&lt;br&gt;
+
+- Organize project files for reproducibility.
+- Think carefully about files accessibility.
+- Consider the different types of files in the project.
+- Prepare for storage requirements.
+- Think about the connectivity between the different components.
+
+.pull-right[
+&lt;img src="photos/hiclipart2.png" width="40%" style="display: block; margin: auto;" /&gt;
 ]
+
+---
+class: center, top
+
+# Computer Paths
+&lt;br&gt;
+
+&lt;img src="figs/nathan-anderson-uq5JjGK_4SE-unsplash.jpg" width="60%" /&gt;
+
+Where are files and folders stored in our computer?
+
+&lt;br&gt;
+.small[Photo by &lt;a href="https://unsplash.com/es/@nathananderson?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"&gt;Nathan Anderson&lt;/a&gt; on &lt;a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"&gt;Unsplash&lt;/a&gt;
+  ]
+
+---
+class: left, top
+# Computer Paths
+
+&lt;br&gt;&lt;br&gt;
+
+* A .purple[_path_ is] the complete location or name of where a computer 
+file, directory, device, or web page is located.
+
+## Examples
+
+  - .bolder[Windows] `\(\rightarrow\)` .purple[C:\documents\example]
+  - .bolder[Mac/linux] `\(\rightarrow\)` .purple[/Users/documents/example]
+  
+
 
 
 ---
 class: left, top
-# Command Line Interface (cli)
+# Absolute and Relative Paths
 
-* .content-box-soft[In most cases (non-linux users) use a Graphical User Interface (GUI) to
-interact with their programs and operating systems `\(\rightarrow\)` for example Windows, Mac OX]
+&lt;br&gt;
 
-* .content-box-soft[However, at the beginning of the computing times most people would use the command line interface to interact with their computer]
+* .green[**An absolute or full path**] contains the computer root's directory and all other sub directories where a file is located.
 
-
-&lt;img src="figs/shell.png" width="60%" style="display: block; margin: auto;" /&gt;
-
-
----
-class: left, top
-# Git and Command Line  
-
-.green[.bold[Learn how to use the shell/command line interface]]
-
-.bold[Why?]
-- .purple[We will use the command line interface to interact with Git and with GitHub]
-
--  .content-box-soft[The shell or command line interface is an interface where the user types  commands.]
-
-- .content-box-soft[This interface allow us to control our computer using commands entered via our keyboard.]
-
-- .content-box-soft[That means that instead of using a graphical user interface (GUI) + our mouse to open and close programs, 
-create folders and moving files --&gt; .green[we are going to type commands].]
-
-
-
-
----
-class: left, top
-# Command Line Interface 
-Also known as the Shell, command line interface (cli) or terminal is 
-an interface for .green[.bold[typing]] commands to interact 
-directly with a computer's operating system.
-
-&lt;img src="figs/shell.png" width="40%" style="display: block; margin: auto;" /&gt;
-#### .green[Examples of things that we can do from the shell or terminal:]
-- Navigating through folders and files
-- Create/delete folders
-- Run and install programs (i.e interact with Git)
-- And much more :-)!
-
-
-
-
----
-class: left, middle
-# Terminal in action
-
-Typically when you open your terminal, it will welcome you with a
-prompt that looks like this:
-
-
-.content-box-soft[ 
-.green[
-```
-patricia@computerid-macbook:~$
-```
-]
-]
-or with the new Catalina Mac OX
-
-.content-box-soft[ 
-.green[
-``` 
-patricia@computerid ~ % 
-  ```
-] 
-
-]
-On Windows it will contain the same elements but look like this:
-.content-box-soft[ 
-.green[
-  ```
-patricia@computerid-pc MINGW64 ~$
-  ```
-]
-]
-
-
-&lt;img src="figs/shell.png" width="40%" style="display: block; margin: auto;" /&gt;
-
-
----
-class: left, top
-# Terminal in practice
-We will start writing commands after .green[~$ or ~%] depending on the terminal version that you are using
-
-&lt;img src="figs/shell.png" width="70%" style="display: block; margin: auto;" /&gt;
-
-- .green[The commands that we are going to use are the same regardless the terminal version you have.]
-
-
----
-class: inverse
-# Let's start learning the commands to navigate our computer and to interact with Git via the command line interface
-
-&lt;img src="figs/mael-balland-V5hAryReZzo-unsplash.jpg" width="60%" style="display: block; margin: auto;" /&gt;
-
-
-
----
-class: left, middle
-# What is the path to my current computer location?
-
-- .bold[.purple[pwd]] --&gt; print working directory/present working directory
-
-.content-box-soft[ 
-.green[
-``` 
-patricia@computerid ~ % pwd
-```
-]
-
-
-.content-box-soft[ 
-```
-/Users/patricia/Documents/ETC5513
-```
-]] 
-
-#### Understanding the output of .bold[.purple[pwd]] command:
-.content-box-soft[ 
-```
-/Users/patricia/ETC5513/GitHub
-```
-]
-- .green[/] --&gt; represents the root directory
-- .green[Users] --&gt; is the  Users directory
-- .green[patricia] --&gt; refers to my directory or folder within the users directory
-- ...
-
-
----
-class: left, middle
-# Contents within the location --&gt; directory
-
-- Listing the contents of the directory or folder where I am:
-
-.bold[.purple[ls]] --&gt; list files inside my directory
-
-.content-box-soft[ 
-.green[
-``` 
-patricia@computerid Documents~ % ls 
-```
-]
-]
-.content-box-soft[ 
-``` 
-Courses Research Teaching file.pdf example.txt
-```
-]
-
-
-- .green[Documents] is an argument to the .purple[.bold[ls]] command. 
-- .purple[.bold[ls]] `\(\rightarrow\)` gives you a list of all the elements in a directory
-- .purple[.bold[ls -a]]  `\(\rightarrow\)` list of .green[all] the files including .green[hidden ones.]
-
-Each Linux command (pwd,ls ...) have lots of options (.green[flags)] that can be added.  
-
-[A reference list of unix commands with options might be found here](https://explainshell.com)
-
-
----
-# Command Line Basics: Navigating between directories
-
-.bold[.purple[cd]] --&gt; change directory 
-
-- First we need to make sure where we are .bold[.purple[pwd]].  We can also use .bold[.purple[pwd]] to figure how we can get where we want to go!
-
-- The .bold[.purple[cd]] command syntax is very simple --&gt; we just need to specify the directory 
-that we want to navigate to
-- At any moment of your navigation, you can use the .bold[.purple[pwd]] command
-to confirm your current location
-- .green[A path that starts with /] is assumed to be absolute. 
-
-
----
-# cd in practice!
-
-### My current location is 
-
-.green[Documents (relative location  --&gt; Documents/Research/COVID)]: 
-
-- .purple[.bold[cd Research]]  `\(\rightarrow\)` means that we move into .green[Research]
-- .purple[.bold[cd COVID]]  `\(\rightarrow\)` means that we move into .green[COVID]
-- .purple[.bold[cd .]]  `\(\rightarrow\)` means the current directory .green[COVID]
-- .purple[.bold[cd ..]]  `\(\rightarrow\)` means (parent directory) that we move back into .green[Documents]
-- The .purple[.bold[~]] symbol is a shorthand for the user’s home directory and we can use it to form paths:
-   - If you are in your .green[Downloads] directory (/Users/John/Downloads) typing
-   .purple[.bold[cd ~]]  `\(\rightarrow\)` will bring you to your Home directory /Users/John!
-
-
----
-# More commands practice!
-
-### My current location is 
-
-.green[COVID (inside we have --&gt; Documents/Research/COVID)]: 
-
-- .purple[.bold[..]] is shorthand for .green["the parent of the current working directory".]
-
-- .purple[.bold[cd ..]]  `\(\rightarrow\)` means that we move into .green[Research] (1 directory up). That is from COVID back to Research
-
-
-- .purple[.bold[mkdir Project1 Project2]] means .green["make two new directories (folders)"called Project1 and Project2.]
-
-
----
-# More commands practice!
-
-- .purple[.bold[mv]] move files or folders `\(\rightarrow\)` takes two arguments, the first being files or folders to move and the second being the path to move to.
-- .purple[.bold[cp]] `\(\rightarrow\)` this command is used to copy files or group of files or directories. When copy files we need to use .purple[.bold[cp -r]] to copy all the directory contents.
-
-- .purple[.bold[rm]]  `\(\rightarrow\)`  remove files and folders
-
-- To remove entire folders .purple[.bold[rm -r]] `\(\rightarrow\)` It requires the -r (recursive) flag.
-
-- We can create empty files with .purple[.bold[touch]] example.Rmd
-
-
-
----
-class: middle, center
-# Cheat sheet for command line 
-
-Excellent summary about the commands that we will be using can be found 
-[here](https://ubuntu.com/tutorials/command-line-for-beginners#1-overview)
-
-.green[You don't need to learn all the commands only those that we are going to use!]
-
-
-
-
----
-class: inverse
-
-#Let's get some practice using the terminal
-
-## Demo
-
-
----
-# Files in a Git repository
-
-.content-box-soft[ 
-The states in a Git repository are: the working directory, the staging area and the 
-git directory:
-]
-* The .green[working directory] is the current snapshot that you are working on.
-* The .green[staging area] is where modified files are marked in their current 
-version ready to be stored in the database `\(\rightarrow\)` index of changes
-* The .green[git directory] is the database where the history is stored
-
-.content-box-neutral[In your file system you will see the folder of your project]
-
-.blue[Three state system ~ Git Development Environment]
-
-More info here [Begining Git and Github](https://git-scm.com/)
-
-
-
----
-# Components of a Git repository: Visually
-
-
-&lt;img src="figs/threeSS.jpg" width="90%" /&gt;
-
----
-# Git repo and remote repository
-
-&lt;img src="figs/completeGDE.jpg" width="90%" /&gt;
-
-
----
-class: left, middle
-# GitHub is our remote repository
-
-&lt;img src="figs/Gitvs.Github-1a.jpg" width="40%" style="display: block; margin: auto;" /&gt;
-.green[
-
-* GitHub is an interface and cloud hosting service built on top of the Git version
-control system.
-* Git does the version control and GitHub stores the data remotely.
-* GitHub makes your projects accessible on a fully feature project website
-]
-[More info about GitHub here](https://github.com/features)
-
-&lt;!-- Ref: Reproducible Research with R and R studio (XXXX) --&gt;
-&lt;!-- ) --&gt;
-
-
-
----
-# Git repo and a remote repository
-
-&lt;img src="figs/completeGDE.jpg" width="90%" /&gt;
-
----
-# GitHub is our remote repository
-
-&lt;img src="figs/github_repo.png" width="100%" /&gt;
-
----
-# Collaborative 
-
-&lt;img src="figs/sharing.jpg" width="100%" /&gt;
-
----
-# From GitHub &lt;--&gt; to our computer
-
-
-.content-box-neutral[
-- Create a repository (.green[repo]) on https://www.github.com
-- .green[Clone] this GitHub repository into our computer `\(\rightarrow\)` .green[making a ‘local copy’].
-- Work on our local copy of the repo
-- .green[Stage and Commit] changes to local repository
-- .green[Push] those changes into the remote repo in GitHub.
-]
-
-Let's look at all these in more detail!
-
----
-# Creating a repo on GitHub
-.pull-left[ 
-1. Login into GitHub
-2. Click the ‘+’ icon on the top right on 
-the menu bar and select ‘New Repository’.
-]
-
-.pull-right[ 
-&lt;img src="figs/newrepo1.png" width="150%" /&gt;
-]
-
-.bold[Important:]
-- Repo name
-- Repo --&gt; public or private
-- Make sure it is initialized with .green[REAME.md]: It is important to have a .green[README.md file] for every repository.
-GitHub will use this file as the "presentation" of the repository and should briefly describe what the repo is about.
-
-
----
-# Creating a repo on GitHub
-&lt;img src="figs/creatingrepo.png" width="90%" /&gt;
-
----
-# Configuring Git in your Rstudio  project using the terminal
-
-
-&lt;img src="figs/setgit.png" width="90%" /&gt;
-
-
----
-# Configuring Git in your Rstudio Cloud project
-
-First of all we need to get your Git configured in Rstudio Cloud (the same follows for your own computer):
-
-- .green[.bold[Open the command line interface/terminal interface (CLI)]] and type:
-
-- .purple[ git config --global user.email] .green["your.email@example.com"]
-- .purple[ git config --global user.name]  .green["Your_Firstname Lastname"]
-
-Make sure you use the same email address for this and for setting up your GitHub account.
-
-- To check that everything is set up correctly, .green[.bold[type the following in the CLI]]:
-.purple[ git config --global user.email]
-   
-
----
-# Configuring Git in your Rstudio Cloud project using the R console
+  .purple["C:\documents\example\file.txt"]
 
 
 &lt;br&gt;
 
-Alternative you could type the following in your .green[.bold[R console" inside Rstudio Cloud]]: 
+* .green[**Relative path**]  refers to a location that is .green[relative to a current directory] (or folder).
 
-.purple[usethis::use_git_config(user.name = "Your Name Surname",
-                                user.email = "Your monash email")]
+   .purple["example\file.txt"]
+  
+&lt;br&gt;  
+.content-box-neutral[ 
+Having clarity about the project files architecture
+gives you total control over its organisation.
+]
+
+---
+# Neat File System
+.pull-left[
+
+&lt;img src="figs/omid-kashmari-s34f0Wxbens-unsplash.jpg" width="65%" /&gt;
+
+.small[Photo by &lt;a href="https://unsplash.com/@omidkashmari?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"&gt;Omid Kashmari&lt;/a&gt; on &lt;a href="https://unsplash.com/@omidkashmari?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"&gt;Unsplash&lt;/a&gt;
+  ]
+]
+
+.pull-right[
+
+&lt;img src="figs/sharon-mccutcheon-tn57JI3CewI-unsplash.jpg" width="50%" /&gt;
+.small[Photo by &lt;a href="https://unsplash.com/@sharonmccutcheon?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"&gt;Alexander Grey&lt;/a&gt; on &lt;a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"&gt;Unsplash&lt;/a&gt;
+  ]
+]
+
+
+
+
+---
+class:  transition
+# Project organization: Examples
+
+&lt;img src="photos/project1.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+---
+class:  transition
+# Project organization: Examples
+
+&lt;img src="photos/project.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+
+
+
+---
+class: transition
+# Tip 3: Accessible connected  workflow
+
+&lt;img src="photos/tamas-tuzes-katai-KJA1xo42dr4-unsplash.jpg" width="40%" style="display: block; margin: auto;" /&gt;
+
+---
+# Data handling 
+
+&lt;br&gt;&lt;br&gt;
+
+
+- Record the **provenance** and licensing of the data.
+- Use raw data and keep data files as **read-only** whenever possible.
+- Integrate all the data preparation and data wrangling in the project to ensure reproducibility:
+
+&lt;br&gt;
+.content-box-soft[
+     * In some projects data wrangling might be done using different software.
+     * When different software is used (SQL/SAS/Excel/Python)  all the steps and how they connect must be documented.
+]
+
+
+
+
+
+
+---
+class: transition
+# Tip 4: Documentation
+
+&lt;br&gt;
+
+- Document for reproducibility from day 0.
+- Describe all the elements of the project. 
+- Keep a journal for manual steps.
+- Be specific about documenting how different components are linked together to ensured reproducibility.
+- Data provenance, licensing, scripts,  any tools used in the project.
+- Clean up when necessary!
+
+.pull-right[
+&lt;img src="photos/hiclipart2.png" width="30%" style="display: block; margin: auto;" /&gt;
+]
+
+&lt;br&gt;
+
+.orange[Think about your  future self and  others that might need to use the project.]
+
+
+---
+# README   example
+&lt;br&gt;
+README example from [UNCTAD](https://github.com/dhopp1-UNCTAD/nowcast_data_update): 
+United Nations Conference on Trade and Development.
+
+&lt;img src="photos/unctad.png" width="60%" style="display: block; margin: auto;" /&gt;
+
+.small[https://github.com/dhopp1-UNCTAD/nowcast_data_update]
+
+
+---
+# README complex example
+&lt;br&gt;
+- [AIMS eReefs Visualisations and aggregations platform documentation repository) 
+
+&lt;img src="photos/aims.png" width="50%" style="display: block; margin: auto;" /&gt;
+
+.small[https://github.com/open-AIMS/ereefs-documentation]
+
+
+
+
 
 &lt;!-- --- --&gt;
-&lt;!-- # Configuring Github II --&gt;
-&lt;!-- ## Setting up the SSH key --&gt;
-&lt;!-- * Using the SSH protocol, you can connect and authenticate to remote servers --&gt;
-&lt;!-- and services. With SSH keys, you can connect to GitHub without supplying --&gt;
-&lt;!-- your username or password at each visit. --&gt;
+&lt;!-- class:  transition --&gt;
+&lt;!-- # Practical tips --&gt;
 
-&lt;!-- *When you set up SSH, you'll generate an SSH key and add it to the ssh-agent and then add the key to your GitHub account. Adding the SSH key to the ssh-agent ensures that your SSH key has an extra layer of security through the use of a passphrase --&gt;
+&lt;!-- - Plan the type and scale of the project --&gt;
+&lt;!-- - Think carefully about how the pieces can be connected --&gt;
+&lt;!-- - From day one: documentation data provenance and licensing/ scripts/ tools ... --&gt;
+&lt;!-- - Think about your future self and other users --&gt;
+&lt;!-- - Work maintenance (team) --&gt;
+&lt;!-- - External services / dependencies --&gt;
 
-
-&lt;!-- Ref: https://help.github.com/en/github/authenticating-to-github/about-ssh --&gt;
 
 ---
-# Getting a remote repository
+class: transition
+# Tip 5: Code Environment Container
 
-&lt;img src="figs/gitclone.jpg" width="60%" style="display: block; margin: auto;" /&gt;
-.green[
-* Grabs remote repository from a server/cloud (i.e GitHub)
-* Creates a new folder (copy of the remote repository) in our computer
+&lt;br&gt;
+**Have you ever encountered the following issue?**
+
+&lt;br&gt;
+
+- My code run 6 months ago (.green[I am sure!]) and now it is not working.
+- My figures in ggplot look funny ...
+- Mostly it is all about your program versions!!
+
+&lt;br&gt;
+.pull-right[
+&lt;img src="figs/markus-spiske-QtFAXP6z0Wk-unsplash.jpg" width="35%" style="display: block; margin: auto;" /&gt;
+
+.small[Photo by &lt;a href="https://unsplash.com/@markusspiske?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"&gt;Markus Spiske&lt;/a&gt; on &lt;a href="https://unsplash.com/@markusspiske?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"&gt;Unsplash&lt;/a&gt;
+  ]
 ]
 
+---
+# Light weight dependency management
+&lt;br&gt;
 
+.content-box-neutral[
+ There are a couple of R dependency management solutions available: .green[packrat] and .green[renv] packages
+offer capabilities for dependency management.]
 
+&lt;img src="figs/renvlogo.png" width="20%" style="display: block; margin: auto;" /&gt;
 
+The idea is to create .green[a project-local-library] to ensure that projects get their own unique library of R packages!
 
 ---
-# Clonning a github repo
+# renv might not be enough
 
-When you create a repository on GitHub, it exists as a remote repository.
-.green[Users can clone your repository to create a local copy on their own computer 
-and sync between the two locations.]
+&lt;img src="photos/renvdocker.png" width="100%" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
 
-&lt;img src="figs/sharing.jpg" width="50%" style="display: block; margin: auto;" /&gt;
-
-More detailed info [here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
-
+.small[https://rstudio.github.io/renv/articles/docker.html]
 
 ---
-# Adding an SHH key into your GitHub
+# Docker 
+&lt;br&gt;
 
-.green[It is very useful to  add an SSH key into your workflow:]
-
-.content-box-soft[ 
-- When working with a Git repository you will be required to identify yourself to GitHub using your username and password *each time to do a commit!*. 
-- An SSH key is an alternative way to identify yourself that .bold[does not require you to enter you username and password every time].
-- .green[SSH keys come in pairs], a .green[public key] that gets shared with services like GitHub, and a .green[private key] that is stored 
-only on your computer or in your Rstudio Cloud project. 
-- If the keys match, you're granted access!
-]  
-
-More info [here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account) and [here](https://help.github.com/en/github/authenticating-to-github/about-ssh)
-
-
-
-
-
----
-# From GitHub to our computer
-
-&lt;img src="figs/github_repo.png" width="60%" style="display: block; margin: auto;" /&gt;
-
-From our shell or command line:
-1. Navigate to the computer location where we want to download the GitHub repo.
-2. .purple[.bold[git clone]]  .purple[git@github.com:okayama1/Git_demo.git]. 
-3. This will create a folder in your computer with the GitHub repository files and folders.
-
-
----
-# Three Git States
-
-.content-box-soft[ 
-.bold[ Git has three main states that your files can reside in: modified, staged, and committed:]
+"A container is a standard unit of software that packages up code and all its dependencies so the application runs quickly and reliably from one computing environment to another. A Docker container image is a lightweight, standalone, executable package of software that includes everything needed to run an application: code, runtime, system tools, system libraries and settings. Container images become containers at runtime and in the case of Docker containers – images become containers when they run on Docker Engine."
+&lt;br&gt;
+Instructions for container environment.
+.pull-right[
+&lt;img src="figs/Docker_logo_PNG2.png" width="40%" style="display: block; margin: auto;" /&gt;
 ]
 
-.green[
-* .bold[Modified] --&gt; you have changed the file but have not committed it to your repository database yet.
+.small[https://www.docker.com/resources/what-container/]
 
-* .bold[Staged] --&gt; you have marked a modified file in its current version to go into your next commit snapshot.
 
-* .bold[Committed] --&gt; the data is safely stored in your local database.
+---
+# Record manually
+&lt;br&gt;
+
+
+&lt;img src="figs/ilya-pavlov-hXrPSgGFpqQ-unsplash.jpg" width="70%" style="display: block; margin: auto;" /&gt;
+
+&lt;br&gt;
+
+Written instructions
+
+.small[Photo by &lt;a href="https://unsplash.com/@ilyapavlov?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"&gt;Ilya Pavlov&lt;/a&gt; on &lt;a href="https://unsplash.com/@ilyapavlov?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"&gt;Unsplash&lt;/a&gt;
+  ]
+
+---
+class: transition
+# Tip 6: Add a license
+
+&lt;br&gt;
+
+.content-box-neutral[
+&lt;img src="photos/Cc.logo.circle.svg" width="30%" style="display: block; margin: auto;" /&gt;
 ]
-This leads us to the three main sections of a Git project: the working tree, the staging area, and the Git directory.
+.small[By Creative Commons, fixed by Quibik - Official Creative Commons&amp;#039; base, Public Domain, https://commons.wikimedia.org/w/index.php?curid=1484324]
+
+
+---
+# Licensing an open source repository
+&lt;br&gt;
+Public repos in  GitHub make your  work publicly available and therefore
+it is important to establish how your work should be acknowledged if 
+someone else wants to use it.
+
+&lt;br&gt;
+.content-box-neutral[ 
+"Public repositories on GitHub are often used to share open source software. 
+For your repository to truly be open source, you'll need to license it
+so that others are free to use, change, and distribute the software."
+]
+
+More info here: https://help.github.com/en/github/creating-cloning-and-archiving-repositories/licensing-a-repository
 
 
 
 ---
-# Three Git States Visually 
+# Available licenses in GitHub
+&lt;br&gt;
+&lt;img src="figs/githubli.png" width="100%" style="display: block; margin: auto;" /&gt;
 
-&lt;img src="figs/stages_example.png" width="100%" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+[More info here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/licensing-a-repository#detecting-a-license)
 
-[Figure source](https://git-scm.com/book/en/v2)
+---
+# Choose an open source license
+
+&lt;img src="figs/chooselicense.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+[Source here](https://choosealicense.com/)
+
+
+
 
 
 ---
-# GitHub Workflow: Visual example
+# No license
 
-.pull-left[
-&lt;img src="figs/gitclone.jpg" width="90%" /&gt;
-clone info --&gt; GitHub repo
-]
+&lt;img src="figs/no-permission.png" width="100%" style="display: block; margin: auto;" /&gt;
+[Source here](https://choosealicense.com/no-permission/)
+
+
+
+---
+class: transition
+# Summary
+
+&lt;br&gt;&lt;br&gt;
+
+- Tip 1: Plan in advance 
+- Tip 2: Consider adequate file system for the project
+- Tip 3: Create accessible connected workflows
+- Tip 4: Document, document, document
+- Tip 5: Consider using a code environment container
+- Tip 6: Add a license
 
 .pull-right[
-&lt;img src="figs/commit_push.jpg" width="90%" /&gt;
-Working in your computer and updating remote repo in GitHub
+&lt;img src="photos/hiclipart2.png" width="35%" style="display: block; margin: auto;" /&gt;
 ]
-
-
-
 ---
-# Tracked and untracked files
+class: transition
+## Many thanks!
 
-* In a git repository tracked files are those which are part of the git repository
-* However, we can also have untracked files for which their history is not tracked
+&lt;img src="photos/umberto-FewHpO4VC9Y-unsplash.jpg" width="75%" style="display: block; margin: auto;" /&gt;
+patricia.menendez@monash.edu &lt;br&gt;
+@PM_maths &lt;br&gt;
 
-.content-box-soft[ 
-- Tracked files are files that were in the last snapshot; they can be unmodified, modified, or staged. 
-In short, tracked files are files that Git knows about. 
-- Untracked files are everything else — any files in your working directory that were
-not in your last snapshot and are not in your staging area.
-]
 
 
-More info [here.](https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository)
 
-  
----
-# From git clone to first commit
-
-* .purple[git clone ".green[remote repo address]"]  `\(\rightarrow\)` is a Git command used to target an existing repository and create a clone (or copy) of the target repository. 
-* .purple[git add .green[filename]] `\(\rightarrow\)` it adds a change in the working directory to the staging area. 
-* .purple[git commit -m ".green[Message]"] The git commit command captures a snapshot of the project's currently staged changes. (m = message for commit. The git commit is used to create a snapshot of the staged changes along a timeline of a Git projects history.)
-* .purple[git push origin .green[master (or main)]]   `\(\rightarrow\)`  The git push command is used to upload local repository content to a remote repository, in this case to the master (or main) branch.
-  
-
----
-class: left, top
-# General Workflow (via Terminal)
- 
-   -  .purple[git clone] is used to target an existing repository and create a clone, or copy of the target repository.
-   -  .purple[git pull]    is used to fetch and download content from a remote repository and immediately update the local repository to match that content.
-   -  .purple[git status]  displays the state of the working directory and the staging area
-   -  .purple[git add file_name]  adds a change in the working directory to the staging area
-   -  .purple[git commit -m "Message"] (m = message for commit. The git commit is used to create a snapshot of the staged changes along a timeline of a Git projects history.)
-   -  .purple[git push origin branch name] is used to upload local repository content to a remote repository. 
-  
-  
-
----
-class: center, middle
-# Rstudio  and GitHub
-
-
-.content-box-neutral[The status/staging panel in Rstudio]
-
-
-&lt;img src="figs/staggingarea.png" width="90%" /&gt;
-
-
-
-
----
-class: left,top
-# Rstudio  and GitHub
-
-.content-box-soft[ 
-RStudio keeps Git constantly scanning the project directory to find any files that have changed or which are new.]
-- .green[By clicking a file's little "check-box" you can stage it.] 
-
-
-&lt;img src="figs/staggingarea.png" width="70%" style="display: block; margin: auto;" /&gt;
-
-
----
-class: left,top
-# Rstudio  and GitHub
-
-.content-box-green[
-.bold[Understanding the symbols in the Rstudio Git pane]:
-]
-- .blue[.bold[Blue-M]]: a file that is already under version control that has been modified.
-- .orange[.bold[Orange-?]]: a file that is not under version control (yet...)
-- .green[.bold[Green-A]]: a file that was not under version control, but which has been staged to be 
-    committed.
-- .red[.bold[Red-D]]: a file under version control has been deleted.  To make it really disappear, you have 
-    to stage its disappearance and commit.
-- .purple[.bold[Purple-R]]: a file that was renamed.  (Note that git in Rstudio seems to be
-    figuring this out on its own.)
-
-
----
-class: left, top
-# Configuration
-
-.content-box-green[    
-The .bold[Diff] window
-]
-
-- Shows what has changed between the last committed version of a file and its
-current state.
-
-- Note: all this output is available from the command line too, but
-the Rstudio interface is very nice!
-
-&lt;img src="figs/diff.png" width="60%" style="display: block; margin: auto;" /&gt;
-
-
----
-class: left, top
-# Making a Commit
- 
-- Super easy:
-    - After staging the files you want to commit...
-    - Write a brief message (first line short, then as much after that as you want)
-    and hit the commit button.
-    
-&lt;img src="figs/commit.png" width="80%" style="display: block; margin: auto auto auto 0;" /&gt;
- 
----
-class: left, top
-# The History window
-   
-Allow us to understand past commits.
-
-- Easy inspection past commits.
-- See what changes were made at each commit.
-
-&lt;img src="figs/history.png" width="60%" style="display: block; margin: auto;" /&gt;
-
-
----
-class: left, top
-# Important:
-
-.content-box-green[
-- We can interact between Git, GitHub and our local repository using the terminal only
-- We can interact between Git, GitHub and our local repository using Rstudio
-] 
-
----
-class: left, top
-# Branching
-
-
-.green[Each repository has one default branch, and can have multiple other branches. Branching is a great feature of version control!].
-
-.pull-left[
-- It allows you to duplicate your existing repository
-- Use a branch to isolate development work without affecting other branches in the repository
-- Modification in a branch can be merged into your project.
-
-]
-.pull-right[
-&lt;img src="figs/git_tree.jpg" width="100%" /&gt;
-]
-
-.green[Branching is particularly important with Git as it is the mechanism that is used when you are collaborating with other researchers/data scientists.]
-
-
----
-class: left, top
-# HEAD
-
-.green[HEAD] is a pointer that Git uses to reference the current snapshop that we are looking at.
-&lt;br&gt;
-
-&lt;img src="figs/gitsnapshots1.png" width="80%" /&gt;
-
-
----
-class: left, top
-&lt;img src="figs/Octocat.png" width="100%" /&gt;
-
----
-class: left, top
-# Creating branches from GitHub
-
-- Create branches directly on GitHub. More info [here](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-and-deleting-branches-within-your-repository)
-
-&lt;img src="figs/GitHub_newbranch.png" width="60%" /&gt;
-
-
----
-class: left, top
-# Deleting branches from GitHub
-
-.green[Branches]
-
-&lt;img src="figs/branch_location.png" width="90%" /&gt;
-
----
-class: left, top
-# Deleting branches from GitHub
-
-&lt;img src="figs/delete-branch.png" width="90%" /&gt;
-
----
-class: left, middle
-&lt;img src="figs/shell.png" width="80%" /&gt;
-
-.green[For the time,we will be using the Terminal within Rstudio. However, I personally prefer to use the external terminal.]
-
----
-class: left, top
-# Create branches using the Terminal/Shell/CLI
-### Using .purple[git branc]h and .purple[git checkout] commands
-
-.content-box-neutral[
-- .purple[git branch] --&gt; shows us the branches we have in our repo and marks our current branch with .purple[*]
-- .purple[git branch] .green[newbranch_name] --&gt; creates a new branch but does not move the .green[HEAD] of the repo there.
-- .purple[git checkout] .green[newbranch_name] --&gt; moves the .green[HEAD] to .green[newbranch_name]
-]
-
-
----
-class: left, top
-# Git HEAD and checkout
-
-.bold[How does Git know what branch you’re currently on?]
-.content-box-neutral[
- By using the pointer --&gt; HEAD. In Git, this is a pointer to the local branch you are currently on. 
-]
-Internally, the .purple[git checkout] command  updates the .green[HEAD] to point to either the specified branch or commit. 
-
----
-class: left, top
-# Updating those new branches in the remote repo in GitHub
-.content-box-neutral[
-- We can just update the empty branch into GitHub by &lt;br&gt;
-.purple[git push origin newbranch_name]
-]
-
-### Alernatively if we had files or changes added into that branch:
-- .purple[git add .]  (--&gt;  adding all the modified files into the staging area)
-- .purple[git commit -m] .green["Updating new newbranch_name"]
-- .purple[git push origin newbranch_name]
- 
- 
- 
----
-# Merging branches
-
-.content-box-green[ Switch to the branch that you want to add 
-the stuff into (let's say that is master). Then
-]
-
-- Merge changes into .green[master] --&gt; .purple[git checkout master]
-- Anytime we can use .purple[git status] --&gt; to check the status of our repo
-- .purple[git merge newbranch_name -m] .green[“Merging branches”] 
-- .purple[git push origin master] updating the remote repository too
-
-&lt;img src="figs/branches.png" width="50%" /&gt;
-
----
-class: left, top
-# Deleting branches using cli
-.green[Deleting branches from your .bold[local] repository]
-
-- .purple[git branch -a] `\(\rightarrow\)` list all the branches
--  Move to .green[master] [.purple[git checkout master]]
--  Delete unwanted branch .purple[git branch -d Name_of_branch] `\(\rightarrow\)` delete branch called Name_of_branch
-
-.content-box-green[
-You cannot delete a branch if your HEAD is on that branch
-]
-
-&lt;img src="figs/GDE.png" width="30%" /&gt;
-
-
----
-class: left, top
-# Deleting branches using cli
-.green[Deleting branches from your .bold[remote repository] (GitHub)]
-
-1. .purple[git push origin --delete Name_of_branch]
-
-&lt;img src="figs/sharing.jpg" width="80%" /&gt;
-
-
-
-
-
----
-class: left, top
-# How to go back to your previous branch?
-
-- .purple[git checkout branchname]
-
-- Imagine that you have two branches:
-   - Master
-   - Alternative_analysis
-   
-- To check in which branch you are currently --&gt; &lt;br&gt;
-.purple[git branch] --&gt; .green[Alternative_analysis]  
-
-- To go back to Master (assuming that you were in there) .purple[git checkout master]
-
-
-
-
----
-class: left, top
-# Merging branches sucessfully
-Suppose we have two branches: .green[master] and .green[new_development]
-
-1. For merging --&gt; go to .green[master] branch .purple[git checkout master]
-2. .purple[git merge new_development]
-3. This will incorporate the changes made in the branch new_development into master.
-
-.content-box-neutral[
-If those steps are successful  your .green[new_development] branch will be fully integrated within the master branch.
-]
-
----
-class: left, top
-# Merging branches with conflicts
-However, it is possible that  Git will not be able to automatically resolve some .green[conflicts], 
-
-.content-box-grey[
-````
-# Auto-merging index.html
-# CONFLICT (content): Merge conflict in index.html
-# Automatic merge failed; fix conflicts and then commit the result.
-```
-]
-
-.green[Important: .bold[DO NOT PANIC]]
-
----
-class: left, top
-# You will need to resolve the conflicts
-&lt;br&gt;
-.content-box-green[
-- You will have to resolve them .bold[manually]. 
-- This normally happens when two branches the same file but with two different versions. In that case Git is not able to figure out which version to use.
-]
-
-
----
-class: left, top
-# Resolving merging conflicts
-
-- First thing to do --&gt; .green[figure out which files are those affected by the conflict]
-- .purple[git status]
-
-.content-box-grey[
-````
-git status
-# On branch master
-# You have unmerged paths.
-#   (fix conflicts and run "git commit")
-# 
-# Unmerged paths:
-#   (use "git add &lt;file&gt;..." to mark resolution)
-# 
-#     both modified:      example.Rmd
-# 
-# no changes added to commit (use "git add" and/or "git commit -a")
-```
-]
-
----
-class: left, top
-# Resolving the conflict
-
-- Open the file with a text editor
-- Go to the lines which are marked with
-.red[
-
-&lt;&lt;&lt;&lt;&lt;&lt;, ====== ,  and &gt;&gt;&gt;&gt;&gt;&gt;
-
-]
-
-- Edit the file
-- .purple[git add] filename
-- .purple[git commit -m "Message"]
-- .purple[git push origin master]
-
----
-class: left, top
-# Resolving conflicts
-When you open the conflict file in a .bold[text editor such as Rstudio Cloud / Rstudio], you will see the conflicted part marked like this:
-
-.content-box-grey[
-````
-/* code unaffected by conflict */
-&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-/* code from master that caused conflict */
-=======
-/* code from feature that caused conflict */
-```
-]
-
-.green[When Git encounters a conflict, it adds .red[&lt;&lt;&lt;&lt;&lt;&lt;&lt;] and .red[======= ] to highlight the parts that caused the conflict and need to be resolved.]
-
-
-
----
-class: left, top
-# Resolving conflicts in practice
-
-- Open the file in a text editor (for example Rstudio / Rstudio Cloud)
-- Decide which part of the code you need to keep in the final .green[master branch]
-- .green[Removed the irrelevant code and the conflict indicators]
-- Run .purple[git add ] to stage the file/s and .purple[git commit] to commit the changes --&gt; this will generate the merge commit.
-
----
-class: left, top
-# Resolving the conflict
-
-&lt;img src="figs/conflict.png" width="100%" style="display: block; margin: auto;" /&gt;
-
-
-
----
-class: left, top
-# Creating branches from Rstudio
-
-&lt;img src="figs/Rstudiobranch.png" width="100%" style="display: block; margin: auto;" /&gt;
-&lt;br&gt;&lt;br&gt;
-Important: When we create a branch using Rstudio the branch is created both in 
-the local and in the remote repository (at the same time.)
----
-class: left, top
-# Keep refreshing Rstudio cloud
-
-
-Otherwise some of your branches and changes might not be updated.
-
-&lt;img src="figs/refresh.png" width="100%" style="display: block; margin: auto;" /&gt;
-
-
----
-class: left, top
-# Diff window in Rstudio 
-
-&lt;img src="figs/diffwindow.png" width="100%" style="display: block; margin: auto;" /&gt;
-
-
-
----
-# Few things to get that are worth
-&lt;br&gt;&lt;br&gt;
-
-Please follow the link below and get the GitHub Education  pack. Then you can use:
-
-- Atom ([Install Atom from this link](https://atom.io/)) and 
-- Gitkraken (from the GitHub education pack for students)
-
-&lt;br&gt;
-https://education.github.com/students
-
-
-
----
-class: left, middle
-# Three important topics
-
-&lt;br&gt;
-
-- GitHub issues --&gt; Great for collaboration. Please see read more [here.](https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues)
-
-- Licenses --&gt; [Choose the right License](https://choosealicense.com/)
-
-- .gitignore --&gt; See more [here](https://github.com/github/gitignore)
-
-
----
-class: left, top
-# Demo
-&lt;img src="figs/paul-skorupskas-7KLa-xLbSXA-unsplash.jpg" width="100%" style="display: block; margin: auto;" /&gt;
-
----
-
-
-
-
-background-image: url("figs/ana-bg-2-rect.jpg")
-background-size: cover
-class: hide-slide-number split-70
-count: false
-
-.column.shade_black[.content[
-
-&lt;br&gt;&lt;br&gt;
-
-
-
-.bottom_abs.width100[
-
-Lecturer: Dr Patricia Menéndez
-
-Department of Econometrics and Business Statistics&lt;br&gt;
-
-
-
-
-
-]
-
-&lt;br /&gt;
-This work is licensed under a &lt;a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/"&gt;Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License&lt;/a&gt;.
-
-&lt;a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/"&gt;&lt;img alt="Creative Commons License" style="border-width:0" src="https://licensebuttons.net/l/by-nc-nd/4.0/88x31.png" /&gt;&lt;/a&gt;
-
-
-]]
-
-
-
-&lt;div class="column transition monash-m-new delay-1s" style="clip-path:url(#swipe__clip-path);"&gt;
-&lt;div class="background-image" style="background-image:url('images/large.png');background-position: center;background-size:cover;margin-left:3px;"&gt;
-&lt;svg class="clip-svg absolute"&gt;
-&lt;defs&gt;
-&lt;clipPath id="swipe__clip-path" clipPathUnits="objectBoundingBox"&gt;
-&lt;polygon points="0.5745 0, 0.5 0.33, 0.42 0, 0 0, 0 1, 0.27 1, 0.27 0.59, 0.37 1, 0.634 1, 0.736 0.59, 0.736 1, 1 1, 1 0, 0.5745 0" /&gt;
-&lt;/clipPath&gt;
-&lt;/defs&gt;	
-&lt;/svg&gt;
-&lt;/div&gt;
-&lt;/div&gt;
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
-<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
-<script>var slideshow = remark.create();
+<script src="libs/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLanguage": "r",
+"highlightLines": true,
+"highlightSpans": false,
+"countIncrementalSlides": false,
+"slideNumberFormat": "%current%/%total%",
+"navigation": {
+"scroll": false,
+"touch": true,
+"click": false
+},
+"ratio": "16:9"
+});
 if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
   window.dispatchEvent(new Event('resize'));
 });
@@ -1510,7 +898,24 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
       links[i].target = '_blank';
     }
   }
-})();</script>
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
 
 <script>
 slideshow._releaseMath = function(el) {
@@ -1536,7 +941,7 @@ slideshow._releaseMath(document);
 (function () {
   var script = document.createElement('script');
   script.type = 'text/javascript';
-  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  script.src  = 'assets/mathjax-local/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
   if (location.protocol !== 'file:' && /^https?:/.test(script.src))
     script.src  = script.src.replace(/^https?:/, '');
   document.getElementsByTagName('head')[0].appendChild(script);

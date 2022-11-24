@@ -1,0 +1,36 @@
+
+background-image: url(`r rmarkdown::metadata$bgimg`)
+background-size: cover
+
+count: false
+
+.column.shade_black[.content[
+
+<br>
+
+# .monash-white.outline-text[`r rmarkdown::metadata$title`]
+
+<h2 class="monash-white outline-text" style="font-size: 30pt!important;">`r rmarkdown::metadata$week`</h2>
+
+<br>
+
+<h2 style="font-weight:900!important;">`r rmarkdown::metadata$subtitle`</h2>
+
+.bottom_abs.width100[
+
+Lecturer: *`r rmarkdown::metadata$author`*
+
+Department of Econometrics and Business Statistics <br>
+Monash University, Melbourne
+
+
+`r rmarkdown::metadata$date`
+
+<br>
+]
+
+
+]]
+
+
+
