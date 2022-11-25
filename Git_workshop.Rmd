@@ -69,10 +69,10 @@ knitr::include_graphics("https://media.giphy.com/media/26tOZ42Mg6pbTUPHW/giphy.g
 ---
 # You return to the same project few months later
 <br> <br>
-```{r out.width = '50%', echo = FALSE, fig.align = "center"}
+```{r out.width = '60%', echo = FALSE, fig.align = "center"}
 knitr::include_graphics("photos/martijn-baudoin-4h0HqC3K4-c-unsplash.jpg")
 ```
-
+<br>
 
 .small[Photo by <a href="https://unsplash.com/@maguay?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Matthew Guay</a> on <a href="https://unsplash.com/s/photos/messy-cable?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>]
 
@@ -81,11 +81,14 @@ class:  transition, center
 # Critical issue
 <br><br>
 ![](https://media.giphy.com/media/11fDMHAzihB8D6/giphy.gif)
+
+<br>
+
 .small[https://media.giphy.com/media/11fDMHAzihB8D6/giphy.gif]
 
   
 ---
-# Let's unpack: What could possible go wrong??!!
+#  What could possible go wrong??!!
 <br>
 .pull-left[
 
@@ -120,11 +123,13 @@ knitr::include_graphics("figs/helloquence-5fNmWej4tAA-unsplash.jpg")
 --
 <br>
 .pull-right[
-Copy paste in the wrong place?
+Copy & paste in the wrong place?
 
 ```{r out.width = '60%', echo = FALSE, fig.align = "center"}
 knitr::include_graphics("https://media.giphy.com/media/l0HlQXlQ3nHyLMvte/giphy.gif")
 ```
+
+.small[https://media.giphy.com/media/l0HlQXlQ3nHyLMvte/giphy.gif]
 ]
 
 
@@ -218,6 +223,7 @@ class:  left, top
 
 <br><br>
 
+
 Reproducibility is a way of thinking and approach projects:
 
 <br>
@@ -227,10 +233,6 @@ Reproducibility is a way of thinking and approach projects:
 knitr::include_graphics("photos/diego-ph-fIq0tET6llw-unsplash.jpg")
 ```
 
-<br>
-
-.small[Photo by <a href="https://unsplash.com/@jdiegoph?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Diego PH</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-  ]
 ]
 
 .pull-left[
@@ -242,11 +244,12 @@ knitr::include_graphics("photos/diego-ph-fIq0tET6llw-unsplash.jpg")
 
 * Demands us to be organized.
 
-* Entitles to think more broadly.
+* Challenges us to think more broadly.
 ]
 ]
 
-
+<br>
+.small[Photo by <a href="https://unsplash.com/@jdiegoph?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Diego PH</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>]
 ---
 
 class:  left, top
@@ -267,8 +270,9 @@ knitr::include_graphics("photos/hiclipart.png")
 <br>
 
 .content-box-soft[
--  Some projects require a single tool (R or Phython for example) and involves only one person.
+-  Some projects require a single tool (R or Phython for example) and involve only one person.
 ]
+
 
 .content-box-soft[
 -  Other projects might involve different teams and require many different tools.
@@ -281,11 +285,11 @@ knitr::include_graphics("photos/hiclipart.png")
 # Project example
 <br>
 
-```{r out.width = '100%', echo = FALSE, fig.align = "center"}
+```{r out.width = '85%', echo = FALSE, fig.align = "center"}
 knitr::include_graphics("figs/environmental-data-science-r4ds-general.png")
 ```
 
-
+ .small["Artwork by @allison_horst".]
 
 ---
 class: center, middle
@@ -590,15 +594,16 @@ class: left, top
   
 <br>  
 .content-box-neutral[ 
-Having clarity about the project files architecture
-gives you total control over its organisation.
+A reproducible project should not have absolute paths!
 ]
 
 ---
 # Neat File System
+<br>
+
 .pull-left[
 
-```{r out.width = '65%', echo = FALSE}
+```{r out.width = '67%', echo = FALSE}
 knitr::include_graphics("figs/omid-kashmari-s34f0Wxbens-unsplash.jpg")
 ```
 
@@ -606,9 +611,10 @@ knitr::include_graphics("figs/omid-kashmari-s34f0Wxbens-unsplash.jpg")
   ]
 ]
 
+
 .pull-right[
 
-```{r out.width = '50%', echo = FALSE}
+```{r out.width = '60%', echo = FALSE}
 knitr::include_graphics("figs/sharon-mccutcheon-tn57JI3CewI-unsplash.jpg")
 ```
 .small[Photo by <a href="https://unsplash.com/@sharonmccutcheon?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Alexander Grey</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
@@ -644,6 +650,8 @@ class: transition
 ```{r out.width = '40%', echo = FALSE, fig.align = "center"}
 knitr::include_graphics("photos/tamas-tuzes-katai-KJA1xo42dr4-unsplash.jpg")
 ```
+.small[Photo by <a href="https://unsplash.com/@tamas_tuzeskatai?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Tamas Tuzes-Katai</a> on <a href="https://unsplash.com/@tamas_tuzeskatai?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  ]
 
 ---
 # Data handling 
@@ -694,7 +702,7 @@ knitr::include_graphics("photos/hiclipart2.png")
 # README   example
 <br>
 README example from [UNCTAD](https://github.com/dhopp1-UNCTAD/nowcast_data_update): 
-United Nations Conference on Trade and Development.
+**United Nations Conference on Trade and Development**.
 
 ```{r out.width = '60%', echo = FALSE, fig.align = "center"}
 knitr::include_graphics("photos/unctad.png")
@@ -706,7 +714,7 @@ knitr::include_graphics("photos/unctad.png")
 ---
 # README complex example
 <br>
-- [AIMS eReefs Visualisations and aggregations platform documentation repository) 
+ **AIMS eReefs Visualisations and aggregations platform documentation repository.**
 
 ```{r out.width = '50%', echo = FALSE, fig.align = "center"}
 knitr::include_graphics("photos/aims.png")
@@ -748,10 +756,10 @@ class: transition
 ```{r out.width = '35%', echo = FALSE, fig.align = "center"}
 knitr::include_graphics("figs/markus-spiske-QtFAXP6z0Wk-unsplash.jpg") 
 ```
-
-.small[Photo by <a href="https://unsplash.com/@markusspiske?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Markus Spiske</a> on <a href="https://unsplash.com/@markusspiske?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-  ]
 ]
+
+
+.small[Photo by <a href="https://unsplash.com/@markusspiske?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Markus Spiske</a> on <a href="https://unsplash.com/@markusspiske?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>]
 
 ---
 # Light weight dependency management
@@ -769,7 +777,7 @@ The idea is to create .green[a project-local-library] to ensure that projects ge
 
 ---
 # renv might not be enough
-
+<br>
 ```{r out.width = '100%', echo = FALSE, fig.align = "center"}
 knitr::include_graphics("photos/renvdocker.png") 
 ```
@@ -837,7 +845,7 @@ For your repository to truly be open source, you'll need to license it
 so that others are free to use, change, and distribute the software."
 ]
 
-More info here: https://help.github.com/en/github/creating-cloning-and-archiving-repositories/licensing-a-repository
+[More info here]( https://help.github.com/en/github/creating-cloning-and-archiving-repositories/licensing-a-repository)
 
 
 
