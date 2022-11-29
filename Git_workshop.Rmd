@@ -259,18 +259,13 @@ class:  left, top
 <br><br>
 
 
-Complexity varies:
+.green[**Complexity varies:**]
 
-.pull-right[
-```{r out.width = '30%', echo = FALSE, fig.align = "center"}
-knitr::include_graphics("photos/hiclipart.png")
-```
-]
 
 <br>
 
 .content-box-soft[
--  Some projects require a single tool (R or Phython for example) and involve only one person.
+-  Some projects require a single tool (R, Phython,Matlab or Genstat for example) and involve only one person.
 ]
 
 
@@ -278,7 +273,11 @@ knitr::include_graphics("photos/hiclipart.png")
 -  Other projects might involve different teams and require many different tools.
 ]
 
-
+.pull-right[
+```{r out.width = '30%', echo = FALSE, fig.align = "center"}
+knitr::include_graphics("photos/hiclipart.png")
+```
+]
 
 
 ---
@@ -289,7 +288,7 @@ knitr::include_graphics("photos/hiclipart.png")
 knitr::include_graphics("figs/environmental-data-science-r4ds-general.png")
 ```
 
- .small["Artwork by @allison_horst".]
+ .small[Artwork by @allison_horst]
 
 ---
 class: center, middle
@@ -377,13 +376,13 @@ General practical tips for reproducible workflows
 
 ---
 class: transition
-# Tip 1: Plan in adavance
+# 1. Plan in adavance
 
 <br>
 
 - Plan the type and scale of the project for reproducibility (as much as possible!).
 - Brainstorm about how  different components are to be connected in a reproducible way. Update when necessary.
-- .purple[.bold[Think about your "future self" and others.]]
+- .orange[.bold[Think about your "future self" and others.]]
 - Set up a version control system.
 - Plan for literate programming and scripting as much as possible.
 - Keep revising and updating the plans as you go.
@@ -439,7 +438,7 @@ class: left, middle
 - .content-box-soft[Version control systems are a category of software tools that 
 help store and manage changes to source code (projects) over time.]
 - .content-box-soft[Version control software keeps track of every modification
-to the source code in a special kind of database.]
+to the source code in a special database.]
 - .content-box-soft[If a mistake is made, you can turn back to previous versions 
 and compare the code to fix the problem while minimizing disruption.]
 - .content-box-soft[It is easy to manage multiple versions of a project
@@ -499,9 +498,11 @@ knitr::include_graphics("figs/GitHub_Logo.png")
 
 <br>
 
+* .green[GitHub/Bitbucket] are code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+
 * Both are cloud-based hosting service that lets you manage Git repositories.
 
-* .green[GitHub/Bitbucket] are code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+
 
 
 ---
@@ -522,12 +523,32 @@ knitr::include_graphics("figs/Gitvs.Github-1a.jpg")
 knitr::include_graphics("figs/sharing.jpg")
 ```
 
+---
+# GUI clients
+.pull-left[
+```{r out.width = '100%', echo = FALSE, fig.align = "center"}
+knitr::include_graphics("figs/guis.png")
+```
+]
+
+.pull-right[
+```{r out.width = '100%', echo = FALSE, fig.align = "center"}
+knitr::include_graphics("figs/shell.png")
+```
 
 
+
+<br> <br>
+
+- Have a look for more GUI clients [here](https://git-scm.com/downloads/guis). 
+
+<br>
+- A great git open source book [here](https://git-scm.com/book/en/v2). 
+]
 
 ---
 class: transition
-# Tip 2: File system for the project
+# 2. File system for the project
 <br><br>
 
 - Organize project files for reproducibility.
@@ -645,7 +666,7 @@ knitr::include_graphics("photos/project.png")
 
 ---
 class: transition
-# Tip 3: Accessible connected  workflow
+# 3. Accessible connected  workflow
 
 ```{r out.width = '40%', echo = FALSE, fig.align = "center"}
 knitr::include_graphics("photos/tamas-tuzes-katai-KJA1xo42dr4-unsplash.jpg")
@@ -676,7 +697,7 @@ knitr::include_graphics("photos/tamas-tuzes-katai-KJA1xo42dr4-unsplash.jpg")
 
 ---
 class: transition
-# Tip 4: Documentation
+# 4. Documentation
 
 <br>
 
@@ -740,7 +761,7 @@ knitr::include_graphics("photos/aims.png")
 
 ---
 class: transition
-# Tip 5: Code Environment Container
+# 5. Code Environment Container
 
 <br>
 **Have you ever encountered the following issue?**
@@ -748,7 +769,7 @@ class: transition
 <br>
 
 - My code run 6 months ago (.green[I am sure!]) and now it is not working.
-- My figures in ggplot look funny ...
+- My figures look funny ...
 - Mostly it is all about your program versions!!
 
 <br>
@@ -819,7 +840,7 @@ Written instructions
 
 ---
 class: transition
-# Tip 6: Add a license
+# 6. Add a license
 
 <br>
 

@@ -244,16 +244,13 @@ class:  left, top
 &lt;br&gt;&lt;br&gt;
 
 
-Complexity varies:
+.green[**Complexity varies:**]
 
-.pull-right[
-&lt;img src="photos/hiclipart.png" width="30%" style="display: block; margin: auto;" /&gt;
-]
 
 &lt;br&gt;
 
 .content-box-soft[
--  Some projects require a single tool (R or Phython for example) and involve only one person.
+-  Some projects require a single tool (R, Phython,Matlab or Genstat for example) and involve only one person.
 ]
 
 
@@ -261,7 +258,9 @@ Complexity varies:
 -  Other projects might involve different teams and require many different tools.
 ]
 
-
+.pull-right[
+&lt;img src="photos/hiclipart.png" width="30%" style="display: block; margin: auto;" /&gt;
+]
 
 
 ---
@@ -270,7 +269,7 @@ Complexity varies:
 
 &lt;img src="figs/environmental-data-science-r4ds-general.png" width="85%" style="display: block; margin: auto;" /&gt;
 
- .small["Artwork by @allison_horst".]
+ .small[Artwork by @allison_horst]
 
 ---
 class: center, middle
@@ -346,13 +345,13 @@ General practical tips for reproducible workflows
 
 ---
 class: transition
-# Tip 1: Plan in adavance
+# 1. Plan in adavance
 
 &lt;br&gt;
 
 - Plan the type and scale of the project for reproducibility (as much as possible!).
 - Brainstorm about how  different components are to be connected in a reproducible way. Update when necessary.
-- .purple[.bold[Think about your "future self" and others.]]
+- .orange[.bold[Think about your "future self" and others.]]
 - Set up a version control system.
 - Plan for literate programming and scripting as much as possible.
 - Keep revising and updating the plans as you go.
@@ -405,7 +404,7 @@ class: left, middle
 - .content-box-soft[Version control systems are a category of software tools that 
 help store and manage changes to source code (projects) over time.]
 - .content-box-soft[Version control software keeps track of every modification
-to the source code in a special kind of database.]
+to the source code in a special database.]
 - .content-box-soft[If a mistake is made, you can turn back to previous versions 
 and compare the code to fix the problem while minimizing disruption.]
 - .content-box-soft[It is easy to manage multiple versions of a project
@@ -457,9 +456,11 @@ class:  left, top
 
 &lt;br&gt;
 
+* .green[GitHub/Bitbucket] are code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+
 * Both are cloud-based hosting service that lets you manage Git repositories.
 
-* .green[GitHub/Bitbucket] are code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+
 
 
 ---
@@ -476,12 +477,28 @@ class:  center, top
 &lt;br&gt;
 &lt;img src="figs/sharing.jpg" width="90%" style="display: block; margin: auto;" /&gt;
 
+---
+# GUI clients
+.pull-left[
+&lt;img src="figs/guis.png" width="100%" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-right[
+&lt;img src="figs/shell.png" width="100%" style="display: block; margin: auto;" /&gt;
 
 
+
+&lt;br&gt; &lt;br&gt;
+
+- Have a look for more GUI clients [here](https://git-scm.com/downloads/guis). 
+
+&lt;br&gt;
+- A great git open source book [here](https://git-scm.com/book/en/v2). 
+]
 
 ---
 class: transition
-# Tip 2: File system for the project
+# 2. File system for the project
 &lt;br&gt;&lt;br&gt;
 
 - Organize project files for reproducibility.
@@ -587,7 +604,7 @@ class:  transition
 
 ---
 class: transition
-# Tip 3: Accessible connected  workflow
+# 3. Accessible connected  workflow
 
 &lt;img src="photos/tamas-tuzes-katai-KJA1xo42dr4-unsplash.jpg" width="40%" style="display: block; margin: auto;" /&gt;
 .small[Photo by &lt;a href="https://unsplash.com/@tamas_tuzeskatai?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"&gt;Tamas Tuzes-Katai&lt;/a&gt; on &lt;a href="https://unsplash.com/@tamas_tuzeskatai?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"&gt;Unsplash&lt;/a&gt;
@@ -616,7 +633,7 @@ class: transition
 
 ---
 class: transition
-# Tip 4: Documentation
+# 4. Documentation
 
 &lt;br&gt;
 
@@ -674,7 +691,7 @@ README example from [UNCTAD](https://github.com/dhopp1-UNCTAD/nowcast_data_updat
 
 ---
 class: transition
-# Tip 5: Code Environment Container
+# 5. Code Environment Container
 
 &lt;br&gt;
 **Have you ever encountered the following issue?**
@@ -682,7 +699,7 @@ class: transition
 &lt;br&gt;
 
 - My code run 6 months ago (.green[I am sure!]) and now it is not working.
-- My figures in ggplot look funny ...
+- My figures look funny ...
 - Mostly it is all about your program versions!!
 
 &lt;br&gt;
@@ -743,7 +760,7 @@ Written instructions
 
 ---
 class: transition
-# Tip 6: Add a license
+# 6. Add a license
 
 &lt;br&gt;
 
