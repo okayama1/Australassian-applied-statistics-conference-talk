@@ -91,16 +91,18 @@ class:  transition, center
 #  What could possible go wrong??!!
 <br>
 .pull-left[
-
+Which file was the last one?
 ```{r out.width = '50%', echo = FALSE, fig.align = "center"}
-knitr::include_graphics("photos/versions.png")
+knitr::include_graphics("figs/scott-webb-YBwPrBiccX4-unsplash.jpg")
 ```
 
+.small[Photo by <a href="https://unsplash.com/@scottwebb?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Scott Webb</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  ]
 ]
 
 --
 .pull-right[
-Which data file was the last one?
+Did I modify my raw data?
 ```{r out.width = '40%', echo = FALSE, fig.align = "center"}
 knitr::include_graphics("photos/documents.png")
 ```
@@ -905,16 +907,16 @@ knitr::include_graphics("figs/no-permission.png")
 
 ---
 class: transition
-# Summary
+# Recommendations summary
 
 <br><br>
 
-- Tip 1: Plan in advance 
-- Tip 2: Consider adequate file system for the project
-- Tip 3: Create accessible connected workflows
-- Tip 4: Document, document, document
-- Tip 5: Consider using a code environment container
-- Tip 6: Add a license
+- 1: Plan in advance 
+- 2: Consider adequate file system for the project
+- 3: Create accessible connected workflows
+- 4: Document, document, document
+- 5: Consider using a code environment container
+- 6: Add a license
 
 .pull-right[
 ```{r out.width = '35%', echo = FALSE, fig.align = "center"}
