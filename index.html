@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Practical Steps Towards Reproducibility</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Patricia Menéndez" />
+    <script src="libs/header-attrs-2.14/header-attrs.js"></script>
+    <link href="libs/remark-css-0.0.1/ninjutsu.css" rel="stylesheet" />
+    <!--
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> 
+    -->
+    <link rel="icon" href="images/favicon.ico"  type='image/x-icon'/>    
+    <link rel="stylesheet" href="assets/animate.css" type="text/css" />
+    <link rel="stylesheet" href="assets/monash-logo.css" type="text/css" />
+    <link rel="stylesheet" href="assets/monash-brand.css" type="text/css" />
+    <link rel="stylesheet" href="assets/monash-fonts.css" type="text/css" />
+    <link rel="stylesheet" href="assets/styles.css" type="text/css" />
+    <link rel="stylesheet" href="assets/custom.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+
+
+
+background-image: url(photos/colton-sturgeon-6KkYYqTEDwQ-unsplash.jpg)
+background-size: cover
+
+count: false
+
+.column.shade_black[.content[
+
+&lt;br&gt;
+
+# .monash-white.outline-text[Practical Steps Towards Reproducibility]
+
+&lt;h2 class="monash-white outline-text" style="font-size: 30pt!important;"&gt;&lt;/h2&gt;
+
+&lt;br&gt;
+
+&lt;h2 style="font-weight:900!important;"&gt;&lt;/h2&gt;
+
+.bottom_abs.width100[
+
+Lecturer: *Patricia Menéndez*
+
+Department of Econometrics and Business Statistics &lt;br&gt;
+Monash University, Melbourne
+
+
+
+
+&lt;br&gt;
+]
+
+
+]]
+
+
+
+
+
+
+
+
+---
+# You are working on a project and it is going great!
+
+&lt;br&gt;
+&lt;img src="gifs/Happy New Year Celebration GIF by Faith Holland - Find &amp; Share on GIPHY.gif" width="80%" style="display: block; margin: auto;" /&gt;
+
+---
+# You return to the same project few months later
+&lt;br&gt; &lt;br&gt;
+&lt;img src="photos/martijn-baudoin-4h0HqC3K4-c-unsplash.jpg" width="60%" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+
+.small[Photo by &lt;a href="https://unsplash.com/@maguay?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"&gt;Matthew Guay&lt;/a&gt; on &lt;a href="https://unsplash.com/s/photos/messy-cable?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"&gt;Unsplash&lt;/a&gt;]
+
+---
+class:  transition, center
+# Critical issue
+&lt;br&gt;&lt;br&gt;
+![](https://media.giphy.com/media/11fDMHAzihB8D6/giphy.gif)
+
+&lt;br&gt;
+
+.small[https://media.giphy.com/media/11fDMHAzihB8D6/giphy.gif]
+
+  
+---
+#  What could possible go wrong??!!
+&lt;br&gt;
+.pull-left[
+Which file was the last one?
+&lt;img src="figs/scott-webb-YBwPrBiccX4-unsplash.jpg" width="50%" style="display: block; margin: auto;" /&gt;
+
+.small[Photo by &lt;a href="https://unsplash.com/@scottwebb?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"&gt;Scott Webb&lt;/a&gt; on &lt;a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"&gt;Unsplash&lt;/a&gt;
+  ]
+]
+
+--
+.pull-right[
+Did I modify my raw data?
+&lt;img src="photos/documents.png" width="40%" style="display: block; margin: auto;" /&gt;
+
+]
+
+--
+&lt;br&gt;
+.pull-left[
+
+Got a new computer?
+
+&lt;img src="figs/helloquence-5fNmWej4tAA-unsplash.jpg" width="60%" style="display: block; margin: auto;" /&gt;
+.small[Photo by &lt;a href="https://unsplash.com/@homajob?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"&gt;Scott Graham&lt;/a&gt; on &lt;a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"&gt;Unsplash&lt;/a&gt;
+  ]
+]
+
+--
+&lt;br&gt;
+.pull-right[
+Copy &amp; paste in the wrong place?
+
+&lt;img src="https://media.giphy.com/media/l0HlQXlQ3nHyLMvte/giphy.gif" width="60%" style="display: block; margin: auto;" /&gt;
+
+.small[https://media.giphy.com/media/l0HlQXlQ3nHyLMvte/giphy.gif]
+]
+
+
+
+---
+# Live our lives peacefully
+
+&lt;img src="photos/colton-sturgeon-6KkYYqTEDwQ-unsplash.jpg" width="80%" style="display: block; margin: auto;" /&gt;
+.small[Photo by &lt;a href="https://unsplash.com/@coltonsturgeon?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"&gt;Colton Sturgeon&lt;/a&gt; on &lt;a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"&gt;Unsplash&lt;/a&gt;
+  ]
+---
+class: left, top
+# Reproducible research and replicability
+
+&lt;br&gt;&lt;br&gt;
+**Definitions by the USA National Academies of Science, Engineering and Medicine**:
+
+&lt;br&gt;
+- .green[**Reproducibility**] ("computational reproducibility") means obtaining consistent computational results using the same input data, computational steps, methods, code, and conditions of analysis. 
+
+- .green[**Replicability**] means obtaining consistent results across studies aimed at answering the same scientific question, each of which has obtained its own data.
+
+&lt;br&gt;
+  
+[Report on reproducibility and replicability](https://www.nap.edu/read/25303/chapter/1#xix)
+
+
+
+---
+class: left, top
+# ~~Figure it out~~
+
+&lt;br&gt;&lt;br&gt;
+.pull-left[
+&lt;img src="figs/ryan-quintal-US9Tc9pKNBU-unsplash.jpg" width="50%" style="display: block; margin: auto;" /&gt;
+
+&lt;img src="figs/karla-hernandez-LrlyZzX6Sws-unsplash.jpg" width="50%" style="display: block; margin: auto;" /&gt;
+
+  
+]
+
+&lt;br&gt;&lt;br&gt;
+.pull-right[
+
+- **Pieces** 
+- **Instructions/manual** 
+- **Tools** 
+
+&lt;br&gt;&lt;br&gt;
+
+
+.small[Photo by &lt;a href="https://unsplash.com/@xavi_cabrera?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"&gt;Xavi Cabrera&lt;/a&gt; on &lt;a href="https://unsplash.com/s/photos/lego?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"&gt;Unsplash&lt;/a&gt;]
+
+.small[Photo by &lt;a href="https://unsplash.com/@karlahrnndz?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"&gt;Karla Hernandez&lt;/a&gt; on &lt;a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"&gt;Unsplash&lt;/a&gt;
+  ]
+]
+
+&lt;!-- --- --&gt;
+
+&lt;!-- class:  left, top --&gt;
+
+&lt;!-- # Reproducible research --&gt;
+
+&lt;!-- * Working to make your research reproducible does require extra upfront effort. --&gt;
+
+&lt;!-- * Making a project reproducible from the start encourages you to use better --&gt;
+&lt;!-- work habits. --&gt;
+
+&lt;!-- * It should push you to bring your data and source code up to a higher --&gt;
+&lt;!-- level of quality than you might if you “thought ‘no one was looking’ ” [Donoho, --&gt;
+&lt;!-- 2010, 386].  --&gt;
+
+&lt;!-- * Reproducible research needs to be stored so that other researchers can actually access the data and source code.  --&gt;
+
+&lt;!-- * Changes are easier to implement `\(\rightarrow\)` specially when using dynamic reproducible documents. --&gt;
+
+&lt;!-- * Reproducible research has higher impact. --&gt;
+
+
+---
+
+class:  left, top
+
+# Philosophy 
+
+&lt;br&gt;&lt;br&gt;
+
+
+Reproducibility is a way of thinking and approach projects:
+
+&lt;br&gt;
+
+.pull-right[
+&lt;img src="photos/diego-ph-fIq0tET6llw-unsplash.jpg" width="50%" style="display: block; margin: auto;" /&gt;
+
+]
+
+.pull-left[
+.content-box-neutral[
+* Requires planning.
+
+* Needs extra upfront effort.
+
+
+* Demands us to be organized.
+
+* Challenges us to think more broadly.
+]
+]
+
+&lt;br&gt;
+.small[Photo by &lt;a href="https://unsplash.com/@jdiegoph?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"&gt;Diego PH&lt;/a&gt; on &lt;a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"&gt;Unsplash&lt;/a&gt;]
+---
+
+class:  left, top
+
+# Reproducibility complexity
+
+&lt;br&gt;&lt;br&gt;
+
+
+.green[**Complexity varies:**]
+
+
+&lt;br&gt;
+
+.content-box-soft[
+-  Some projects require a single tool (R, Phython, Matlab or Genstat for example) and involve only one person.
+]
+
+
+.content-box-soft[
+-  Other projects might involve different teams and require many different tools.
+]
+
+.pull-right[
+&lt;img src="photos/hiclipart.png" width="30%" style="display: block; margin: auto;" /&gt;
+]
+
+
+---
+# Project example
+&lt;br&gt;
+
+&lt;img src="figs/environmental-data-science-r4ds-general.png" width="85%" style="display: block; margin: auto;" /&gt;
+
+ .small[Artwork by @allison_horst]
+
+---
+class: center, middle
+# Example: R, Rstudio and Rmarkdown files
+
+&lt;br&gt;
+.pull-left[
+&lt;img src="figs/first-rmarkdown-code.png" width="90%" /&gt;
+]
+
+&lt;br&gt;
+.pull-right[
+&lt;img src="figs/first-rmarkdown-output.png" width="90%" /&gt;
+]
+
+
+---
+# Literate programming
+
+&lt;br&gt;&lt;br&gt;
+.content-box-neutral[
+Literate programming is an approach to writing reports using software that weaves together the source code and text at the time of creation. 
+]
+
+&lt;br&gt;
+
+.blue[Donald Knuth coined the term
+literate programming in the 1970s to refer to a source file
+that could be both run by a computer and “woven” with a
+formatted presentation document [Knuth, 1992].]
+
+
+---
+# Complex workflow example
+
+&lt;img src="photos/ereefs.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+
+.pull-left[
+&lt;img src="photos/ereefs1.png" width="150%" style="display: block; margin: auto;" /&gt;
+]
+.pull-right[
+&lt;img src="photos/ereefs2.png" width="70%" style="display: block; margin: auto;" /&gt;
+]
+
+&lt;br&gt;
+.small[https://www.ereefs.org.au/about/]
+---
+# Complex projects need more than literate programming
+
+&lt;img src="photos/umberto-FewHpO4VC9Y-unsplash.jpg" width="80%" style="display: block; margin: auto;" /&gt;
+.small[Photo by &lt;a href="https://unsplash.com/@umby?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"&gt;Umberto&lt;/a&gt; on &lt;a href="https://unsplash.com/@umby?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"&gt;Unsplash&lt;/a&gt;
+  ]
+
+&lt;br&gt;&lt;br&gt;
+Literate programming
+
+
+---
+class: transition
+
+&lt;br&gt;&lt;br&gt;
+
+#Reproducibility set up will depend on the project
+
+&lt;br&gt;&lt;br&gt;
+General practical tips for reproducible workflows
+
+&lt;br&gt;
+.orange[There is no one-size-fits-all approach!]
+
+
+
+---
+class: transition
+# 1. Plan in adavance
+
+&lt;br&gt;
+
+- Plan the type and scale of the project for reproducibility (as much as possible!).
+- Brainstorm about how  different components are to be connected in a reproducible way. Update when necessary.
+- .orange[.bold[Think about your "future self" and others.]]
+- Set up a version control system.
+- Plan for literate programming and scripting as much as possible.
+- Keep revising and updating the plans as you go.
+
+---
+# Workflow organization 
+
+
+Decide how you are going to organize your project workflow and prepare the scaffolding for that.
+
+&lt;br&gt;
+
+- For example, think about the project files structure
+- In particular, where is the data going to be stored and how?
+- Where will you place the scripts and codes? 
+- How are other things going to be organized in the project?
+- How are the different elements going to be linked together?
+- Where will you place the project documentation?
+
+&lt;br&gt;
+.content-box-soft[
+ .blue[Think about someone else who have no clue about this project and will need to run it in 3 years time!] 
+]
+
+
+---
+class:  middle, top
+
+# What is a version control system?
+
+&lt;img src="figs/marco-lermer-bHZ2_D4bTfg-unsplash.jpg" width="40%" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+
+.content-box-soft[.bold[.green[Version control is a system that records changes to a file or set of files over time
+so that you can recall specific versions later.]]]
+
+&lt;br&gt;
+.green[It also allows us to collaborate and share our projects with others!]
+
+
+.small[&lt;span&gt;Photo by &lt;a href="https://unsplash.com/@malepics?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText"&gt;Marco Lermer&lt;/a&gt; on &lt;a href="https://unsplash.com/?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText"&gt;Unsplash&lt;/a&gt;&lt;/span&gt;]
+
+
+
+---
+class: left, middle
+# Version control
+
+&lt;br&gt;
+- .content-box-soft[Version control systems are a category of software tools that 
+help store and manage changes to source code (projects) over time.]
+- .content-box-soft[Version control software keeps track of every modification
+to the source code in a special database.]
+- .content-box-soft[If a mistake is made, you can turn back to previous versions 
+and compare the code to fix the problem while minimizing disruption.]
+- .content-box-soft[It is easy to manage multiple versions of a project
+]
+- .content-box-soft[It is a very useful (actually essential!) tool for 
+collaborating and for sharing open source resources.]
+
+
+
+
+
+---
+class:  left, top
+
+# Git
+&lt;br&gt;
+.pull-left[
+&lt;img src="figs/Git-Logo-Black.png" width="70%" /&gt;
+]
+
+.pull-right[
+&lt;img src="figs/git_tree2.jpg" width="70%" /&gt;
+&lt;br&gt;
+]
+
+
+&lt;br&gt;&lt;br&gt;
+
+
+"Git is a distributed version-control system for tracking changes in source 
+code during software development. It is designed for coordinating work among 
+programmers, but it can be used to track changes in any set of files. Its 
+goals include speed, data integrity,  and support for distributed, non-linear workflows"
+
+.small[https://en.wikipedia.org/wiki/Git]
+
+---
+class:  left, top
+#Github, Bitbucket and others
+
+&lt;br&gt;
+.pull-left[
+&lt;img src="figs/atlassian_Bitbucket_Logo.png" width="80%" /&gt;
+]
+
+.pull-right[
+&lt;img src="figs/GitHub_Logo.png" width="70%" /&gt;
+]
+
+&lt;br&gt;
+
+* .green[GitHub/Bitbucket] are code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+
+* Both are cloud-based hosting service that lets you manage Git repositories.
+
+
+
+
+---
+class:  center, top
+# Git and Github
+
+&lt;br&gt;
+&lt;img src="figs/Gitvs.Github-1a.jpg" width="60%" /&gt;
+
+.small[Source: https://blog.devmountain.com/git-vs-github-whats-the-difference/]
+
+---
+# Sharing: team work / open source
+&lt;br&gt;
+&lt;img src="figs/sharing.jpg" width="90%" style="display: block; margin: auto;" /&gt;
+
+---
+# GUI clients
+.pull-left[
+&lt;img src="figs/guis.png" width="100%" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-right[
+&lt;img src="figs/shell.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+
+
+&lt;br&gt; &lt;br&gt;
+
+- Have a look for more GUI clients [here](https://git-scm.com/downloads/guis). 
+
+&lt;br&gt;
+- A great git open source book [here](https://git-scm.com/book/en/v2). 
+]
+
+---
+class: transition
+# 2. File system for the project
+&lt;br&gt;&lt;br&gt;
+
+- Organize project files for reproducibility.
+- Think carefully about files accessibility.
+- Consider the different types of files in the project.
+- Prepare for storage requirements.
+- Think about the connectivity between the different components.
+
+.pull-right[
+&lt;img src="photos/hiclipart2.png" width="40%" style="display: block; margin: auto;" /&gt;
+]
+
+---
+class: center, top
+
+# Computer Paths
+&lt;br&gt;
+
+&lt;img src="figs/nathan-anderson-uq5JjGK_4SE-unsplash.jpg" width="60%" /&gt;
+
+Where are files and folders stored in our computer?
+
+&lt;br&gt;
+.small[Photo by &lt;a href="https://unsplash.com/es/@nathananderson?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"&gt;Nathan Anderson&lt;/a&gt; on &lt;a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"&gt;Unsplash&lt;/a&gt;
+  ]
+
+---
+class: left, top
+# Computer Paths
+
+&lt;br&gt;&lt;br&gt;
+
+* A .purple[_path_ is] the complete location or name of where a computer 
+file, directory, device, or web page is located.
+
+## Examples
+
+  - .bolder[Windows] `\(\rightarrow\)` .purple[C:\documents\example]
+  - .bolder[Mac/linux] `\(\rightarrow\)` .purple[/Users/documents/example]
+  
+
+
+
+---
+class: left, top
+# Absolute and Relative Paths
+
+&lt;br&gt;
+
+* .green[**An absolute or full path**] contains the computer root's directory and all other sub directories where a file is located.
+
+  .purple["C:\documents\example\file.txt"]
+
+
+&lt;br&gt;
+
+* .green[**Relative path**]  refers to a location that is .green[relative to a current directory] (or folder).
+
+   .purple["example\file.txt"]
+  
+&lt;br&gt;  
+.content-box-neutral[ 
+A reproducible project should not have absolute paths!
+]
+
+---
+# Neat File System
+&lt;br&gt;
+
+.pull-left[
+
+&lt;img src="figs/omid-kashmari-s34f0Wxbens-unsplash.jpg" width="67%" /&gt;
+
+.small[Photo by &lt;a href="https://unsplash.com/@omidkashmari?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"&gt;Omid Kashmari&lt;/a&gt; on &lt;a href="https://unsplash.com/@omidkashmari?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"&gt;Unsplash&lt;/a&gt;
+  ]
+]
+
+
+.pull-right[
+
+&lt;img src="figs/sharon-mccutcheon-tn57JI3CewI-unsplash.jpg" width="60%" /&gt;
+.small[Photo by &lt;a href="https://unsplash.com/@sharonmccutcheon?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"&gt;Alexander Grey&lt;/a&gt; on &lt;a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"&gt;Unsplash&lt;/a&gt;
+  ]
+]
+
+
+
+
+---
+class:  transition
+# Project organization: Examples
+
+&lt;img src="photos/project1.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+---
+class:  transition
+# Project organization: Examples
+
+&lt;img src="photos/project.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+
+
+
+---
+class: transition
+# 3. Accessible connected  workflow
+
+&lt;img src="photos/tamas-tuzes-katai-KJA1xo42dr4-unsplash.jpg" width="40%" style="display: block; margin: auto;" /&gt;
+.small[Photo by &lt;a href="https://unsplash.com/@tamas_tuzeskatai?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"&gt;Tamas Tuzes-Katai&lt;/a&gt; on &lt;a href="https://unsplash.com/@tamas_tuzeskatai?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"&gt;Unsplash&lt;/a&gt;
+  ]
+
+---
+# Data handling 
+
+&lt;br&gt;&lt;br&gt;
+
+
+- Record the **provenance** and licensing of the data.
+- Use raw data and keep data files as **read-only** whenever possible.
+- Integrate all the data preparation and data wrangling in the project to ensure reproducibility:
+
+&lt;br&gt;
+.content-box-soft[
+     * In some projects data wrangling might be done using different software.
+     * When different software is used (SQL/SAS/Excel/Python)  all the steps and how they connect must be documented.
+]
+
+
+
+
+
+
+---
+class: transition
+# 4. Documentation
+
+&lt;br&gt;
+
+- Document for reproducibility from day 0.
+- Describe all the elements of the project. 
+- Keep a journal for manual steps.
+- Be specific about documenting how different components are linked together to ensured reproducibility.
+- Data provenance, licensing, scripts,  any tools used in the project.
+- Clean up when necessary!
+
+.pull-right[
+&lt;img src="photos/hiclipart2.png" width="30%" style="display: block; margin: auto;" /&gt;
+]
+
+&lt;br&gt;
+
+.orange[Think about your  future self and  others that might need to use the project.]
+
+
+---
+# README   example
+&lt;br&gt;
+README example from [UNCTAD](https://github.com/dhopp1-UNCTAD/nowcast_data_update): 
+**United Nations Conference on Trade and Development**.
+
+&lt;img src="photos/unctad.png" width="60%" style="display: block; margin: auto;" /&gt;
+
+.small[https://github.com/dhopp1-UNCTAD/nowcast_data_update]
+
+
+---
+# README complex example
+&lt;br&gt;
+ **AIMS eReefs Visualisations and aggregations platform documentation repository.**
+
+&lt;img src="photos/aims.png" width="50%" style="display: block; margin: auto;" /&gt;
+
+.small[https://github.com/open-AIMS/ereefs-documentation]
+
+
+
+
+
+&lt;!-- --- --&gt;
+&lt;!-- class:  transition --&gt;
+&lt;!-- # Practical tips --&gt;
+
+&lt;!-- - Plan the type and scale of the project --&gt;
+&lt;!-- - Think carefully about how the pieces can be connected --&gt;
+&lt;!-- - From day one: documentation data provenance and licensing/ scripts/ tools ... --&gt;
+&lt;!-- - Think about your future self and other users --&gt;
+&lt;!-- - Work maintenance (team) --&gt;
+&lt;!-- - External services / dependencies --&gt;
+
+
+---
+class: transition
+# 5. Code Environment Container
+
+&lt;br&gt;
+**Have you ever encountered the following issue?**
+
+&lt;br&gt;
+
+- My code run 6 months ago (.green[I am sure!]) and now it is not working.
+- My figures look funny ...
+- Mostly it is all about your program versions!!
+
+&lt;br&gt;
+.pull-right[
+&lt;img src="figs/markus-spiske-QtFAXP6z0Wk-unsplash.jpg" width="35%" style="display: block; margin: auto;" /&gt;
+]
+
+
+.small[Photo by &lt;a href="https://unsplash.com/@markusspiske?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"&gt;Markus Spiske&lt;/a&gt; on &lt;a href="https://unsplash.com/@markusspiske?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"&gt;Unsplash&lt;/a&gt;]
+
+---
+# Light weight dependency management
+&lt;br&gt;
+
+.content-box-neutral[
+ There are a couple of R dependency management solutions available: .green[packrat] and .green[renv] packages
+offer capabilities for dependency management.]
+
+&lt;img src="figs/renvlogo.png" width="20%" style="display: block; margin: auto;" /&gt;
+
+The idea is to create .green[a project-local-library] to ensure that projects get their own unique library of R packages!
+
+---
+# renv might not be enough
+&lt;br&gt;
+&lt;img src="photos/renvdocker.png" width="100%" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+
+.small[https://rstudio.github.io/renv/articles/docker.html]
+
+---
+# Docker 
+&lt;br&gt;
+
+"A container is a standard unit of software that packages up code and all its dependencies so the application runs quickly and reliably from one computing environment to another. A Docker container image is a lightweight, standalone, executable package of software that includes everything needed to run an application: code, runtime, system tools, system libraries and settings. Container images become containers at runtime and in the case of Docker containers – images become containers when they run on Docker Engine."
+&lt;br&gt;
+Instructions for container environment.
+.pull-right[
+&lt;img src="figs/Docker_logo_PNG2.png" width="40%" style="display: block; margin: auto;" /&gt;
+]
+
+.small[https://www.docker.com/resources/what-container/]
+
+
+---
+# Record manually
+&lt;br&gt;
+
+
+&lt;img src="figs/ilya-pavlov-hXrPSgGFpqQ-unsplash.jpg" width="70%" style="display: block; margin: auto;" /&gt;
+
+&lt;br&gt;
+
+Written instructions
+
+.small[Photo by &lt;a href="https://unsplash.com/@ilyapavlov?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"&gt;Ilya Pavlov&lt;/a&gt; on &lt;a href="https://unsplash.com/@ilyapavlov?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"&gt;Unsplash&lt;/a&gt;
+  ]
+
+---
+class: transition
+# 6. Add a license
+
+&lt;br&gt;
+
+.content-box-neutral[
+&lt;img src="photos/Cc.logo.circle.svg" width="30%" style="display: block; margin: auto;" /&gt;
+]
+.small[By Creative Commons, fixed by Quibik - Official Creative Commons&amp;#039; base, Public Domain, https://commons.wikimedia.org/w/index.php?curid=1484324]
+
+
+---
+# Licensing an open source repository
+&lt;br&gt;
+Public repos in  GitHub make your  work publicly available and therefore
+it is important to establish how your work should be acknowledged if 
+someone else wants to use it.
+
+&lt;br&gt;
+.content-box-neutral[ 
+"Public repositories on GitHub are often used to share open source software. 
+For your repository to truly be open source, you'll need to license it
+so that others are free to use, change, and distribute the software."
+]
+
+[More info here]( https://help.github.com/en/github/creating-cloning-and-archiving-repositories/licensing-a-repository)
+
+
+
+---
+# Available licenses in GitHub
+&lt;br&gt;
+&lt;img src="figs/githubli.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+&lt;br&gt;
+[More info here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/licensing-a-repository#detecting-a-license)
+
+---
+# Choose an open source license
+
+&lt;img src="figs/chooselicense.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+[Source here](https://choosealicense.com/)
+
+
+
+
+
+---
+# No license
+
+&lt;img src="figs/no-permission.png" width="100%" style="display: block; margin: auto;" /&gt;
+[Source here](https://choosealicense.com/no-permission/)
+
+
+
+---
+class: transition
+# Recommendations summary
+
+&lt;br&gt;
+
+- 1: Plan in advance 
+- 2: Consider adequate file system for the project
+- 3: Create accessible connected workflows
+- 4: Document, document, document
+- 5: Consider using a code environment container
+- 6: Add a license
+
+.pull-right[
+&lt;img src="photos/hiclipart2.png" width="35%" style="display: block; margin: auto;" /&gt;
+]
+
+&lt;br&gt;
+
+.orange[Think about all this in advance. It is worth!]
+
+---
+class: transition
+## Many thanks!
+
+&lt;img src="photos/umberto-FewHpO4VC9Y-unsplash.jpg" width="75%" style="display: block; margin: auto;" /&gt;
+patricia.menendez@monash.edu &lt;br&gt;
+@PM_maths &lt;br&gt;
+
+
+
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="libs/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLanguage": "r",
+"highlightLines": true,
+"highlightSpans": false,
+"countIncrementalSlides": false,
+"slideNumberFormat": "%current%/%total%",
+"navigation": {
+"scroll": false,
+"touch": true,
+"click": false
+},
+"ratio": "16:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'assets/mathjax-local/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
