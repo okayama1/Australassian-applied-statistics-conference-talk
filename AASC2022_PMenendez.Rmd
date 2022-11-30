@@ -483,7 +483,7 @@ goals include speed, data integrity,  and support for distributed, non-linear wo
 
 ---
 class:  left, top
-#Github, Bitbucket and others
+#GitHub, Bitbucket and others
 
 <br>
 .pull-left[
@@ -509,7 +509,7 @@ knitr::include_graphics("figs/GitHub_Logo.png")
 
 ---
 class:  center, top
-# Git and Github
+# Git and GitHub
 
 <br>
 ```{r out.width = '60%', echo = FALSE}
