@@ -67,7 +67,7 @@ knitr::include_graphics("gifs/Happy New Year Celebration GIF by Faith Holland - 
 ```
 
 ---
-# You return to the same project few months later
+# You return to the same project a few months later
 <br> <br>
 ```{r out.width = '60%', echo = FALSE, fig.align = "center"}
 knitr::include_graphics("photos/martijn-baudoin-4h0HqC3K4-c-unsplash.jpg")
@@ -226,7 +226,7 @@ class:  left, top
 <br><br>
 
 
-Reproducibility is a way of thinking and approach projects:
+Reproducibility is a way of thinking and approaching projects:
 
 <br>
 
@@ -267,7 +267,7 @@ class:  left, top
 <br>
 
 .content-box-soft[
--  Some projects require a single tool (R, Phython, Matlab or Genstat for example) and involve only one person.
+-  Some projects require a single tool (R, Python, Matlab or Genstat for example) and involve only one person.
 ]
 
 
@@ -487,8 +487,8 @@ class:  left, top
 
 <br>
 .pull-left[
-```{r out.width = '80%', echo = FALSE}
-knitr::include_graphics("figs/atlassian_Bitbucket_Logo.png")
+```{r out.width = '100%', echo = FALSE}
+knitr::include_graphics("figs/bitbucket.png")
 ```
 ]
 
@@ -542,10 +542,10 @@ knitr::include_graphics("figs/shell.png")
 
 <br> <br>
 
-- Have a look for more GUI clients [here](https://git-scm.com/downloads/guis). 
+- Have a look at more GUI clients [here](https://git-scm.com/downloads/guis). 
 
 <br>
-- A great git open source book [here](https://git-scm.com/book/en/v2). 
+- A great Git open source book [here](https://git-scm.com/book/en/v2). 
 ]
 
 ---
@@ -568,7 +568,7 @@ knitr::include_graphics("photos/hiclipart2.png")
 ---
 class: center, top
 
-# Computer Paths
+# Computer paths
 <br>
 
 ```{r out.width = '60%', echo = FALSE}
@@ -583,7 +583,7 @@ Where are files and folders stored in our computer?
 
 ---
 class: left, top
-# Computer Paths
+# Computer paths
 
 <br><br>
 
@@ -600,7 +600,7 @@ file, directory, device, or web page is located.
 
 ---
 class: left, top
-# Absolute and Relative Paths
+# Absolute and relative paths
 
 <br>
 
@@ -621,7 +621,7 @@ A reproducible project should not have absolute paths!
 ]
 
 ---
-# Neat File System
+# Neat file system
 <br>
 
 .pull-left[
@@ -706,7 +706,7 @@ class: transition
 - Document for reproducibility from day 0.
 - Describe all the elements of the project. 
 - Keep a journal for manual steps.
-- Be specific about documenting how different components are linked together to ensured reproducibility.
+- Be specific about documenting how different components are linked together to ensure reproducibility.
 - Data provenance, licensing, scripts,  any tools used in the project.
 - Clean up when necessary!
 
@@ -926,17 +926,18 @@ knitr::include_graphics("photos/hiclipart2.png")
 
 <br>
 
-.orange[Think about all this in advance. It is worth!]
+.orange[Think about all this in advance. It is worth your while!]
 
 ---
 class: transition
 ## Many thanks!
 
-```{r out.width = '75%', echo = FALSE, fig.align = "center"}
+```{r out.width = '65%', echo = FALSE, fig.align = "center"}
 knitr::include_graphics("photos/umberto-FewHpO4VC9Y-unsplash.jpg")
 ```
 patricia.menendez@monash.edu <br>
 @PM_maths <br>
+https://okayama1.github.io/Australassian-applied-statistics-conference-talk/
 
 
 
