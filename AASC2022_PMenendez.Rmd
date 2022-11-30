@@ -486,6 +486,7 @@ class:  left, top
 #GitHub, Bitbucket and others
 
 <br>
+
 .pull-left[
 ```{r out.width = '100%', echo = FALSE}
 knitr::include_graphics("figs/bitbucket.png")
