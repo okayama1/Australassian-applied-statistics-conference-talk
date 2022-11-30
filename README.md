@@ -1,4 +1,5 @@
-# Wombats-2022-git-workshop
-Cover 
-Photo by <a href="https://unsplash.com/@coltonsturgeon?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Colton Sturgeon</a> on <a href="https://unsplash.com/s/photos/meditation?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-  
+This is repository for the [Australasian Applied Statistics Conference](https://aasc2022.netlify.app/programme/) talk on  "Practical steps towards reproducibility". 
+
+**Abstract**
+
+Government organisations, industry players, and universities are embracing the notion of reproducibility around projects involving statistical and data analyses as a cornerstone in their working practices. It has become a basic requirement that projects be built in a reproducible manner to ensure that consistent computational results are obtained when using the same input data, computational methods, code and conditions for analysis. In this talk, I will discuss practical steps that can help managers and data science practitioners to set up their statistics and data analysis projects in a reproducible way. Meanwhile, I will also address some of the fundamental challenges in making work reproducible. I will draw on a few examples from my experience working outside of academia and discuss how reproducibility can be incorporated in university curriculums.
