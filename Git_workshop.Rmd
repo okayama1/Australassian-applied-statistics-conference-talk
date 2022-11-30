@@ -63,7 +63,7 @@ library(kableExtra)
 
 <br>
 ```{r out.width = '80%', echo = FALSE, fig.align = "center"}
-knitr::include_graphics("https://media.giphy.com/media/26tOZ42Mg6pbTUPHW/giphy.gif")
+knitr::include_graphics("gifs/Happy New Year Celebration GIF by Faith Holland - Find & Share on GIPHY.gif")
 ```
 
 ---
@@ -267,7 +267,7 @@ class:  left, top
 <br>
 
 .content-box-soft[
--  Some projects require a single tool (R, Phython,Matlab or Genstat for example) and involve only one person.
+-  Some projects require a single tool (R, Phython, Matlab or Genstat for example) and involve only one person.
 ]
 
 
@@ -393,20 +393,20 @@ class: transition
 # Workflow organization 
 
 
-Decide how you are going to organize your project's workflow and prepare the scaffolding for that.
+Decide how you are going to organize your project workflow and prepare the scaffolding for that.
 
 <br>
 
-- For example, think about the project folder's structure
+- For example, think about the project files structure
 - In particular, where is the data going to be stored and how?
 - Where will you place the scripts and codes? 
-- How are other things going to be stored in the project?
+- How are other things going to be organized in the project?
 - How are the different elements going to be linked together?
 - Where will you place the project documentation?
 
 <br>
 .content-box-soft[
- .blue[Think about someone else that have no clue about this project and will need to run it in 3 years time!] 
+ .blue[Think about someone else who have no clue about this project and will need to run it in 3 years time!] 
 ]
 
 
@@ -909,7 +909,7 @@ knitr::include_graphics("figs/no-permission.png")
 class: transition
 # Recommendations summary
 
-<br><br>
+<br>
 
 - 1: Plan in advance 
 - 2: Consider adequate file system for the project
@@ -923,6 +923,11 @@ class: transition
 knitr::include_graphics("photos/hiclipart2.png")
 ```
 ]
+
+<br>
+
+.orange[Think about all this in advance. It is worth!]
+
 ---
 class: transition
 ## Many thanks!
