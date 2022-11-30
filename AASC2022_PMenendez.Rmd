@@ -2,7 +2,7 @@
 title: "Practical Steps Towards Reproducibility"
 week: ""
 subtitle: ""
-author: "Patricia Menéndez"
+author: "Dr Patricia Menéndez"
 date: ""
 pdflink: ""
 bgimg: "photos/colton-sturgeon-6KkYYqTEDwQ-unsplash.jpg"
